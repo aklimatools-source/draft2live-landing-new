@@ -26,6 +26,8 @@ export async function generateMetadata({
       languages: {
         uk: '/uk/',
         en: '/en/',
+        ru: '/ru/',
+        pl: '/pl/',
       },
     },
     openGraph: {
@@ -33,7 +35,7 @@ export async function generateMetadata({
       description: t('ogDescription'),
       url: `https://draft2live.ai/${locale}/`,
       siteName: 'Draft2Live',
-      locale: locale === 'uk' ? 'uk_UA' : 'en_US',
+      locale: locale === 'uk' ? 'uk_UA' : locale === 'ru' ? 'ru_RU' : locale === 'pl' ? 'pl_PL' : 'en_US',
       type: 'website',
       images: [{ url: '/og-image.png', width: 1200, height: 630 }],
     },
@@ -67,7 +69,7 @@ async function getJsonLd(locale: string) {
     name: 'Draft2Live',
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Web',
-    offers: { '@type': 'AggregateOffer', lowPrice: '0', highPrice: '399', priceCurrency: 'USD', offerCount: '4' },
+    offers: { '@type': 'AggregateOffer', lowPrice: '0', highPrice: '399', priceCurrency: 'EUR', offerCount: '4' },
     aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.8', ratingCount: '127' },
   };
 

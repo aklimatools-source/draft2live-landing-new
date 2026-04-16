@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { staggerContainer } from '@/lib/animations';
 import { useEarlyAccess } from '@/lib/EarlyAccessContext';
 
@@ -92,8 +92,10 @@ function StaggerGrid() {
 
 function VideoPoster() {
   const t = useTranslations('hero');
+  const locale = useLocale();
   const [playing, setPlaying] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const videoSrc = `/videos/demo-${locale}.mp4`;
 
   const handlePlay = () => {
     setPlaying(true);
@@ -110,7 +112,7 @@ function VideoPoster() {
         controls
         preload="metadata"
       >
-        <source src="/demo.mp4" type="video/mp4" />
+        <source src={videoSrc} type="video/mp4" />
       </video>
     );
   }

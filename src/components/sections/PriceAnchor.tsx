@@ -40,12 +40,12 @@ export default function PriceAnchor() {
                   <div className="font-bold text-white">{c.name}</div>
                   <div className="text-sm text-text-muted">{c.desc}</div>
                 </div>
-                <div className="font-mono font-bold text-text-secondary">${c.price}{t('perMonth')}</div>
+                <div className="font-mono font-bold text-text-secondary">€{c.price}{t('perMonth')}</div>
               </div>
             ))}
             <div className="flex items-center justify-between pt-4 border-t border-border">
               <span className="text-text-secondary font-bold">{t('totalLabel')}</span>
-              <span className="font-mono text-2xl font-bold text-[#e1e1e1] line-through">${total}{t('perMonth')}</span>
+              <span className="font-mono text-2xl font-bold text-[#e1e1e1] line-through">€{total}{t('perMonth')}</span>
             </div>
           </motion.div>
 
@@ -53,7 +53,7 @@ export default function PriceAnchor() {
           <motion.div variants={fadeInRight} className="relative">
             <div className="pricing-featured rounded-2xl p-8 md:p-12 text-center">
               <div className="text-sm uppercase tracking-widest text-teal-300 mb-2">{t('d2l.eyebrow')}</div>
-              <div className="text-6xl md:text-7xl font-black font-mono gradient-text" style={{ letterSpacing: '-0.04em' }}>$49</div>
+              <div className="text-6xl md:text-7xl font-black font-mono gradient-text" style={{ letterSpacing: '-0.04em' }}>€49</div>
               <div className="text-text-secondary mt-1">{t('d2l.priceSuffix')}</div>
               <div className="mt-6 inline-block px-4 py-2 rounded-full bg-teal-500/10 border border-teal-500/20">
                 <span className="text-teal-300 font-bold text-sm">

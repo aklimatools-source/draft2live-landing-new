@@ -1,410 +1,410 @@
 {
   "metadata": {
-    "title": "Draft2Live — Від ключового слова до статті на сайті за 20 хвилин",
-    "description": "AI-платформа для SEO-контенту: SERP-аналіз за країною, Brand Voice, SEO-аудит і публікація в WordPress або Drupal одним кліком.",
-    "ogTitle": "Draft2Live — AI для SEO-контенту, що публікується сам",
-    "ogDescription": "Вкажіть ключове слово. Отримайте готову статтю на сайті за 20 хвилин. SERP-аналіз, Brand Voice, публікація в CMS.",
-    "twitterTitle": "Draft2Live — AI для SEO-контенту",
-    "twitterDescription": "Від ключового слова до статті на сайті за 20 хвилин. SERP-аналіз, Brand Voice, публікація одним кліком."
+    "title": "Draft2Live — From keyword to published article in 20 minutes",
+    "description": "AI platform for SEO content: country-specific SERP analysis, Brand Voice, SEO audit, and one-click publishing to WordPress or Drupal.",
+    "ogTitle": "Draft2Live — AI for SEO content that publishes itself",
+    "ogDescription": "Enter a keyword. Get a published article on your site in 20 minutes. SERP analysis, Brand Voice, CMS publishing.",
+    "twitterTitle": "Draft2Live — AI for SEO content",
+    "twitterDescription": "From keyword to published article in 20 minutes. SERP analysis, Brand Voice, one-click publishing."
   },
   "jsonLd": {
-    "orgDescription": "AI-платформа, що перетворює ключове слово на SEO-оптимізовану статтю, опубліковану на вашому сайті, за 20 хвилин."
+    "orgDescription": "AI platform that turns a keyword into an SEO-optimized article published on your website in 20 minutes."
   },
   "nav": {
-    "ariaLabel": "Головна навігація",
-    "skipToContent": "Перейти до контенту",
-    "menu": "Меню",
-    "cta": "Ранній доступ",
+    "ariaLabel": "Main navigation",
+    "skipToContent": "Skip to content",
+    "menu": "Menu",
+    "cta": "Early Access",
     "links": {
-      "features": "Можливості",
-      "howItWorks": "Як це працює",
-      "pricing": "Тарифи",
+      "features": "Features",
+      "howItWorks": "How It Works",
+      "pricing": "Pricing",
       "faq": "FAQ"
     }
   },
   "hero": {
-    "badge": "10 000+ статей для 127+ компаній",
-    "titleLine1": "Від ключового слова",
-    "titleLine2Prefix": "до",
-    "titleLine3": "на сайті за 20 хвилин",
-    "typingWords": ["SEO-стаття", "блог-пост", "огляд продукту", "гайд", "лонгрід"],
-    "subtitle": "Вкажіть фразу. AI вивчить ТОП-10 у вибраній країні й напише статтю під стиль вашого бренду. Публікуйте в WordPress чи Drupal одним кліком.",
-    "searchPlaceholder": "Введіть ключове слово для статті...",
-    "searchAriaLabel": "Ключове слово для статті",
-    "searchCta": "Написати статтю →",
-    "exampleLabel": "Наприклад:",
+    "badge": "10,000+ articles for 127+ companies",
+    "titleLine1": "From keyword",
+    "titleLine2Prefix": "to",
+    "titleLine3": "on your site in 20 minutes",
+    "typingWords": ["SEO article", "blog post", "product review", "guide", "long-read"],
+    "subtitle": "Enter a phrase. AI analyzes the TOP 10 in your target country and writes an article in your brand's style. Publish to WordPress or Drupal in one click.",
+    "searchPlaceholder": "Enter a keyword for your article...",
+    "searchAriaLabel": "Keyword for article",
+    "searchCta": "Write article →",
+    "exampleLabel": "For example:",
     "chipExamples": [
-      "як вибрати CRM",
-      "SEO для магазину",
-      "огляд ноутбуків 2025",
-      "просування SaaS"
+      "how to choose a CRM",
+      "SEO for e-commerce",
+      "laptop reviews 2025",
+      "SaaS marketing"
     ],
-    "microcopy": "Без кредитної картки • 3 статті безкоштовно • Налаштування за 2 хвилини",
-    "videoAriaLabel": "Дивитися демо Draft2Live",
-    "videoTitle": "Дивитися демо",
-    "videoSubtitle": "2 хв, від ключового слова до статті на сайті",
+    "microcopy": "No credit card • 3 articles free • Setup in 2 minutes",
+    "videoAriaLabel": "Watch Draft2Live demo",
+    "videoTitle": "Watch demo",
+    "videoSubtitle": "2 min, from keyword to published article",
     "trustStats": [
-      { "value": "10 000+", "label": "статей опубліковано" },
-      { "value": "127+", "label": "компаній довіряють" },
-      { "value": "45", "label": "мов контенту" }
+      { "value": "10,000+", "label": "articles published" },
+      { "value": "127+", "label": "companies trust us" },
+      { "value": "45", "label": "content languages" }
     ]
   },
   "logoMarquee": {
-    "heading": "Інтегрується з вашим стеком"
+    "heading": "Integrates with your stack"
   },
   "howItWorks": {
     "header": {
-      "badge": "ЯК ЦЕ ПРАЦЮЄ",
-      "title": "Від ключового слова до статті на сайті за 4 кроки."
+      "badge": "HOW IT WORKS",
+      "title": "From keyword to published article in 4 steps."
     },
     "items": [
       {
-        "title": "Вкажіть ключове слово та країну",
-        "desc": "Оберіть тему й цільовий ринок. AI дістає реальну видачу Google саме з вашого регіону."
+        "title": "Enter a keyword and country",
+        "desc": "Choose your topic and target market. AI pulls real Google results from your specific region."
       },
       {
-        "title": "Платформа аналізує ТОП-10",
-        "desc": "Розбирає структуру, ключові слова, обсяг і стратегію кожного конкурента."
+        "title": "Platform analyzes the TOP 10",
+        "desc": "Breaks down structure, keywords, volume, and strategy of each competitor."
       },
       {
-        "title": "AI пише статтю під ваш стиль",
-        "desc": "Бере SERP-дані, ваш Brand Voice і документи з Knowledge Base, щоб написати статтю."
+        "title": "AI writes in your style",
+        "desc": "Uses SERP data, your Brand Voice, and Knowledge Base documents to write the article."
       },
       {
-        "title": "Один клік, стаття на сайті",
-        "desc": "Публікуєте в WordPress чи Drupal. Мета-теги, картинки, alt-тексти й перелінковка додаються автоматично."
+        "title": "One click, article on your site",
+        "desc": "Publish to WordPress or Drupal. Meta tags, images, alt texts, and internal links are added automatically."
       }
     ]
   },
   "features": {
     "header": {
-      "badge": "МОЖЛИВОСТІ",
-      "title": "Один сервіс замість п'яти. Кожен на рівні окремого продукту.",
-      "subtitle": "SERP-аналіз, AI-копірайтинг, SEO-аудит, переклади та публікація в одному вікні."
+      "badge": "FEATURES",
+      "title": "One service instead of five. Each at the level of a standalone product.",
+      "subtitle": "SERP analysis, AI copywriting, SEO audit, translations, and publishing in one window."
     },
     "items": [
       {
-        "title": "SERP-аналіз за країною",
-        "desc": "Аналізує ТОП-10 Google саме у вашій країні. Не загальні дані, а реальні конкуренти вашого ринку.",
+        "title": "Country-specific SERP analysis",
+        "desc": "Analyzes Google's TOP 10 in your specific country. Not generic data — real competitors in your market.",
         "details": [
-          "45 мов із гео-таргетингом",
-          "Структура й ключові слова кожного конкурента",
-          "Актуальні дані SERP в реальному часі"
+          "45 languages with geo-targeting",
+          "Structure and keywords of each competitor",
+          "Real-time SERP data"
         ],
-        "visual": { "label": "45 мов", "stat": "ТОП-10 SERP" }
+        "visual": { "label": "45 languages", "stat": "TOP 10 SERP" }
       },
       {
         "title": "Brand Voice",
-        "desc": "Завантажте 10+ текстів, і AI перейме ваш стиль, тон і термінологію. Кожна стаття звучить як ваша.",
+        "desc": "Upload 10+ texts and AI adopts your style, tone, and terminology. Every article sounds like yours.",
         "details": [
-          "Розбирає тон, лексику, структуру",
-          "Окремий профіль для кожного проєкту",
-          "Стиль покращується з кожним текстом"
+          "Analyzes tone, vocabulary, structure",
+          "Separate profile for each project",
+          "Style improves with each text"
         ],
-        "visual": { "label": "Ваш стиль", "stat": "10+ зразків" }
+        "visual": { "label": "Your style", "stat": "10+ samples" }
       },
       {
-        "title": "SEO-аудит перед публікацією",
-        "desc": "Автоматична перевірка за 8 метриками. Стаття не вийде, поки не набере 85+ балів.",
+        "title": "SEO audit before publishing",
+        "desc": "Automatic check across 8 metrics. Article won't publish until it scores 85+.",
         "details": [
-          "Щільність ключових слів",
-          "Читабельність та структура заголовків",
-          "Мета-теги, alt-тексти, перелінковка"
+          "Keyword density",
+          "Readability and heading structure",
+          "Meta tags, alt texts, internal linking"
         ],
-        "visual": { "label": "85+", "stat": "8 метрик" }
+        "visual": { "label": "85+", "stat": "8 metrics" }
       },
       {
-        "title": "Публікація в CMS одним кліком",
-        "desc": "WordPress та Drupal. Стаття йде на сайт із зображеннями, мета-тегами, alt-текстами та внутрішніми посиланнями.",
+        "title": "One-click CMS publishing",
+        "desc": "WordPress and Drupal. Article goes to your site with images, meta tags, alt texts, and internal links.",
         "details": [
-          "Автоматичні мета-теги та Schema",
-          "Оптимізовані зображення з alt-текстом",
-          "Внутрішня перелінковка"
+          "Automatic meta tags and Schema",
+          "Optimized images with alt text",
+          "Internal linking"
         ],
-        "visual": { "label": "1 клік", "stat": "WordPress & Drupal" }
+        "visual": { "label": "1 click", "stat": "WordPress & Drupal" }
       },
       {
         "title": "Knowledge Base",
-        "desc": "Завантажте документи про продукт, послуги чи галузь. AI бере з них факти, щоб кожна стаття була точною.",
+        "desc": "Upload documents about your product, services, or industry. AI uses them for facts, making every article accurate.",
         "details": [
-          "PDF, DOCX, TXT формати",
-          "Контент індексується автоматично",
-          "Точні факти замість загальних фраз"
+          "PDF, DOCX, TXT formats",
+          "Content is indexed automatically",
+          "Accurate facts instead of generic phrases"
         ],
-        "visual": { "label": "Факти", "stat": "Ваші документи" }
+        "visual": { "label": "Facts", "stat": "Your documents" }
       },
       {
-        "title": "White-label для агентств",
-        "desc": "Клієнти бачать ваш бренд та інтерфейс. Масштабуйте контент без нових копірайтерів у штаті.",
+        "title": "White-label for agencies",
+        "desc": "Clients see your brand and interface. Scale content without hiring new copywriters.",
         "details": [
-          "Власний домен та логотип",
-          "Окремий Brand Voice на клієнта",
-          "Командний доступ з ролями"
+          "Custom domain and logo",
+          "Separate Brand Voice per client",
+          "Team access with roles"
         ],
-        "visual": { "label": "Ваш бренд", "stat": "White-label" }
+        "visual": { "label": "Your brand", "stat": "White-label" }
       }
     ]
   },
   "metrics": {
     "items": [
-      { "label": "статей опубліковано" },
-      { "label": "активних компаній" },
-      { "label": "мов із гео-таргетингом" },
-      { "label": "від ключового слова до публікації", "suffix": " хв" }
+      { "label": "articles published" },
+      { "label": "active companies" },
+      { "label": "languages with geo-targeting" },
+      { "label": "from keyword to publish", "suffix": " min" }
     ]
   },
   "testimonials": {
     "header": {
-      "badge": "ВІДГУКИ",
-      "title": "Результати, а не обіцянки"
+      "badge": "TESTIMONIALS",
+      "title": "Results, not promises"
     },
-    "ratingAriaLabel": "Рейтинг: 5 з 5",
-    "navAriaLabel": "Відгук від {name}",
+    "ratingAriaLabel": "Rating: 5 out of 5",
+    "navAriaLabel": "Testimonial from {name}",
     "items": [
       {
-        "quote": "Раніше писав 8 статей на місяць і вигорав. Зараз роблю 30+ через Draft2Live і продаю клієнтам як преміум-послугу. Математика нарешті на моєму боці.",
-        "author": "Олексій Коваленко",
-        "role": "SEO-фрілансер, 3 роки досвіду",
-        "initials": "ОК"
+        "quote": "I used to write 8 articles a month and burn out. Now I produce 30+ through Draft2Live and sell them to clients as a premium service. The math finally works in my favor.",
+        "author": "Oleksiy Kovalenko",
+        "role": "SEO freelancer, 3 years experience",
+        "initials": "OK"
       },
       {
-        "quote": "Підключили white-label на 12 клієнтських сайтів. Клієнти думають, що це наша розробка. За перший місяць зробили 87 статей. Раніше на це пішов би квартал і 2 додаткових копірайтери.",
-        "author": "Надія Марченко",
-        "role": "CEO, digital-агентство ContentBox",
-        "initials": "НМ"
+        "quote": "We connected white-label to 12 client sites. Clients think it's our own development. In the first month we produced 87 articles. Previously that would have taken a quarter and 2 extra copywriters.",
+        "author": "Nadiya Marchenko",
+        "role": "CEO, digital agency ContentBox",
+        "initials": "NM"
       },
       {
-        "quote": "У мене інтернет-магазин меблів. Платив копірайтеру 800 грн за статтю і чекав тиждень. Тепер сам роблю 4 статті на день. Органічний трафік виріс на 40% за 2 місяці.",
-        "author": "Андрій Ткаченко",
-        "role": "Власник, MebleCity",
-        "initials": "АТ"
+        "quote": "I run a furniture e-store. I used to pay a copywriter €25 per article and wait a week. Now I write 4 articles a day myself. Organic traffic grew 40% in 2 months.",
+        "author": "Andriy Tkachenko",
+        "role": "Owner, MebleCity",
+        "initials": "AT"
       },
       {
-        "quote": "Ми перевели блог на 6 мов за тиждень. Раніше один переклад коштував $40 і займав 3 дні. Зараз Draft2Live робить локалізовану SEO-статтю за 20 хвилин.",
-        "author": "Ірина Савченко",
+        "quote": "We translated our blog into 6 languages in a week. A single translation used to cost €40 and take 3 days. Now Draft2Live creates a localized SEO article in 20 minutes.",
+        "author": "Iryna Savchenko",
         "role": "Head of Content, TravelHub",
-        "initials": "ІС"
+        "initials": "IS"
       },
       {
-        "quote": "Як маркетолог-одинак, я не міг конкурувати з агентствами за контент. Зараз публікую 15 статей на місяць. Лідогенерація через блог зросла на 65%.",
-        "author": "Дмитро Бондаренко",
-        "role": "Marketing Manager, SaaS-стартап",
-        "initials": "ДБ"
+        "quote": "As a solo marketer, I couldn't compete with agencies on content. Now I publish 15 articles a month. Blog lead generation increased by 65%.",
+        "author": "Dmytro Bondarenko",
+        "role": "Marketing Manager, SaaS startup",
+        "initials": "DB"
       },
       {
-        "quote": "Knowledge Base вирішила нашу головну проблему. AI тепер знає наші продукти, ціни і технічні деталі. Статті нарешті точні, а не загальні фрази з інтернету.",
-        "author": "Олена Шевченко",
+        "quote": "Knowledge Base solved our main problem. AI now knows our products, prices, and technical details. Articles are finally accurate, not generic internet phrases.",
+        "author": "Olena Shevchenko",
         "role": "Product Marketing, TechStore",
-        "initials": "ОШ"
+        "initials": "OS"
       }
     ]
   },
   "useCases": {
     "header": {
-      "badge": "ДЛЯ КОГО",
-      "title": "Одна платформа. Три сценарії"
+      "badge": "WHO IT'S FOR",
+      "title": "One platform. Three scenarios"
     },
     "items": [
       {
-        "persona": "SEO-фрілансер",
-        "headline": "3x більше статей без вигорання",
-        "desc": "Продаєте клієнту контент як преміум-послугу. 30 статей на місяць замість 8. Математика нарешті працює на вас.",
-        "metrics": ["30+ статей/міс", "Преміум якість", "ROI з першого тижня"]
+        "persona": "SEO freelancer",
+        "headline": "3x more articles without burnout",
+        "desc": "Sell content to clients as a premium service. 30 articles a month instead of 8. The math finally works for you.",
+        "metrics": ["30+ articles/mo", "Premium quality", "ROI from week one"]
       },
       {
-        "persona": "Digital-агентство",
-        "headline": "White-label під ваш бренд",
-        "desc": "Підключіть клієнтські сайти, налаштуйте Brand Voice для кожного. Клієнти бачать ваш інтерфейс. Масштабуйте без найму.",
-        "metrics": ["До 15 сайтів", "Командний доступ", "Ваш бренд"]
+        "persona": "Digital agency",
+        "headline": "White-label under your brand",
+        "desc": "Connect client sites, set up Brand Voice for each. Clients see your interface. Scale without hiring.",
+        "metrics": ["Up to 15 sites", "Team access", "Your brand"]
       },
       {
-        "persona": "Власник бізнесу",
-        "headline": "Контент без копірайтера",
-        "desc": "Введіть ключове слово, отримайте опубліковану статтю. Не потрібно розбиратися в SEO. Органічний трафік зростає, поки ви займаєтеся бізнесом.",
-        "metrics": ["Без SEO-досвіду", "20 хв на статтю", "+40% трафіку"]
+        "persona": "Business owner",
+        "headline": "Content without a copywriter",
+        "desc": "Enter a keyword, get a published article. No SEO expertise needed. Organic traffic grows while you focus on business.",
+        "metrics": ["No SEO experience needed", "20 min per article", "+40% traffic"]
       }
     ]
   },
   "priceAnchor": {
     "header": {
-      "badge": "ПОРІВНЯЙТЕ ВИТРАТИ",
-      "title": "Ви платите $328/міс за те, що Draft2Live робить за $49."
+      "badge": "COMPARE COSTS",
+      "title": "You pay €328/mo for what Draft2Live does for €49."
     },
-    "totalLabel": "Разом:",
-    "perMonth": "/міс",
+    "totalLabel": "Total:",
+    "perMonth": "/mo",
     "competitors": [
-      { "name": "Semrush", "desc": "SERP-аналіз та дослідження ключових слів" },
-      { "name": "SurferSEO", "desc": "SEO-скоринг та оптимізація контенту" },
-      { "name": "Jasper", "desc": "AI-генерація тексту" },
-      { "name": "DeepL Pro", "desc": "Переклади на інші мови" },
-      { "name": "WP-плагіни (Yoast, RankMath)", "desc": "SEO-плагіни та авто-публікація" }
+      { "name": "Semrush", "desc": "SERP analysis and keyword research" },
+      { "name": "SurferSEO", "desc": "SEO scoring and content optimization" },
+      { "name": "Jasper", "desc": "AI text generation" },
+      { "name": "DeepL Pro", "desc": "Translations to other languages" },
+      { "name": "WP plugins (Yoast, RankMath)", "desc": "SEO plugins and auto-publishing" }
     ],
     "d2l": {
-      "eyebrow": "Draft2Live: все в одному",
-      "priceSuffix": "/міс. SERP, AI, SEO, CMS, переклади",
-      "savings": "Ви заощаджуєте $279/міс = $3,348 на рік"
+      "eyebrow": "Draft2Live: all in one",
+      "priceSuffix": "/mo. SERP, AI, SEO, CMS, translations",
+      "savings": "You save €279/mo = €3,348 per year"
     }
   },
   "pricing": {
     "header": {
-      "badge": "ТАРИФИ",
-      "title": "Оберіть план під ваш обсяг. Змінюйте будь-коли."
+      "badge": "PRICING",
+      "title": "Choose a plan for your volume. Change anytime."
     },
     "billing": {
-      "monthly": "Місячна",
-      "annual": "Річна",
+      "monthly": "Monthly",
+      "annual": "Annual",
       "discount": "-20%",
-      "toggleAriaLabel": "Перемкнути тарифний план"
+      "toggleAriaLabel": "Toggle billing plan"
     },
-    "perMonth": "/міс",
+    "perMonth": "/mo",
     "plans": [
       {
-        "description": "Спробуйте без зобов'язань, картка не потрібна",
+        "description": "Try without commitment, no card required",
         "features": [
-          "3 статті на місяць",
-          "Публікація на draft2live.com",
-          "3 мови з гео-таргетингом",
-          "SERP-аналіз ТОП-10",
-          "SEO-аудит за 8 метриками"
+          "3 articles per month",
+          "Publishing on draft2live.com",
+          "3 languages with geo-targeting",
+          "TOP 10 SERP analysis",
+          "SEO audit across 8 metrics"
         ],
-        "ctaText": "Написати 3 статті безкоштовно"
+        "ctaText": "Write 3 articles for free"
       },
       {
-        "description": "Для фрілансерів, що заробляють на контенті",
+        "description": "For freelancers who earn from content",
         "features": [
-          "20 статей на місяць",
-          "2 сайти (WordPress/Drupal)",
+          "20 articles per month",
+          "2 sites (WordPress/Drupal)",
           "1 Brand Voice",
-          "5 мов з гео-таргетингом",
-          "Мета-теги, alt-тексти, перелінковка",
-          "3 документи в Knowledge Base"
+          "5 languages with geo-targeting",
+          "Meta tags, alt texts, internal linking",
+          "3 documents in Knowledge Base"
         ],
-        "ctaText": "Почати з 20 статей/міс"
+        "ctaText": "Start with 20 articles/mo"
       },
       {
-        "badge": "Найчастіше обирають",
-        "description": "Для агентств та контент-команд",
+        "badge": "Most popular",
+        "description": "For agencies and content teams",
         "features": [
-          "100 статей на місяць",
-          "5 сайтів",
-          "45 мов із гео-таргетингом",
+          "100 articles per month",
+          "5 sites",
+          "45 languages with geo-targeting",
           "5 Brand Voices",
-          "Контент-календар та командний доступ",
-          "Пріоритетна підтримка"
+          "Content calendar and team access",
+          "Priority support"
         ],
-        "ctaText": "Масштабувати контент"
+        "ctaText": "Scale your content"
       },
       {
-        "description": "Для тих, хто масштабує контент як бізнес",
+        "description": "For those who scale content as a business",
         "features": [
-          "300 статей на місяць",
-          "15 сайтів",
-          "API для автоматизації",
-          "White-label: ваш бренд, ваш інтерфейс",
-          "Необмежена Knowledge Base",
-          "Персональний акаунт-менеджер"
+          "300 articles per month",
+          "15 sites",
+          "API for automation",
+          "White-label: your brand, your interface",
+          "Unlimited Knowledge Base",
+          "Dedicated account manager"
         ],
-        "ctaText": "Отримати API + White-label"
+        "ctaText": "Get API + White-label"
       }
     ]
   },
   "faq": {
     "header": {
-      "badge": "ЗАПИТАННЯ",
-      "title": "Відповіді на те, що зупиняє вас від старту"
+      "badge": "FAQ",
+      "title": "Answers to what's holding you back"
     },
     "microCta": {
-      "text": "Залишились питання? Спробуйте самі — перші 3 статті безкоштовно.",
-      "button": "Забронювати ранній доступ →"
+      "text": "Still have questions? Try it yourself — first 3 articles are free.",
+      "button": "Book early access →"
     },
     "items": [
       {
-        "q": "Чим це відрізняється від ChatGPT?",
-        "a": "ChatGPT генерує текст з голови, без контексту вашого ринку. Draft2Live спершу аналізує ТОП-10 Google саме у вашій країні, вивчає структуру й ключові слова конкурентів, потім пише статтю у вашому стилі та публікує в CMS з мета-тегами і зображеннями. Це не генератор тексту, а повний цикл: дослідження, написання, публікація.",
-        "aPlain": "ChatGPT генерує текст з голови, без контексту вашого ринку. Draft2Live спершу аналізує ТОП-10 Google саме у вашій країні, вивчає структуру й ключові слова конкурентів, потім пише статтю у вашому стилі та публікує в CMS з мета-тегами і зображеннями. Це не генератор тексту, а повний цикл: дослідження, написання, публікація."
+        "q": "How is this different from ChatGPT?",
+        "a": "ChatGPT generates text from scratch without your market context. Draft2Live first analyzes Google's TOP 10 in your specific country, studies competitor structure and keywords, then writes an article in your style and publishes it to your CMS with meta tags and images. It's not a text generator — it's a full cycle: research, writing, publishing.",
+        "aPlain": "ChatGPT generates text from scratch without your market context. Draft2Live first analyzes Google's TOP 10 in your specific country, studies competitor structure and keywords, then writes an article in your style and publishes it to your CMS with meta tags and images. It's not a text generator — it's a full cycle: research, writing, publishing."
       },
       {
-        "q": "Google не покарає за AI-контент?",
-        "a": "Google каже прямо: оцінюється якість контенту, а не спосіб створення. Draft2Live пише за реальними SERP-даними, перевіряє кожну статтю за 8 SEO-метриками і не публікує, поки бал не сягне 85. За 10 000+ статей жоден клієнт не отримав санкцій.",
-        "aPlain": "Google каже прямо: оцінюється якість контенту, а не спосіб створення. Draft2Live пише за реальними SERP-даними, перевіряє кожну статтю за 8 SEO-метриками і не публікує, поки бал не сягне 85. За 10 000+ статей жоден клієнт не отримав санкцій."
+        "q": "Won't Google penalize AI content?",
+        "a": "Google states clearly: content quality is what matters, not how it's created. Draft2Live writes based on real SERP data, checks every article across 8 SEO metrics, and won't publish until the score reaches 85. Across 10,000+ articles, no client has received penalties.",
+        "aPlain": "Google states clearly: content quality is what matters, not how it's created. Draft2Live writes based on real SERP data, checks every article across 8 SEO metrics, and won't publish until the score reaches 85. Across 10,000+ articles, no client has received penalties."
       },
       {
-        "q": "Скільки часу реально займає одна стаття?",
-        "a": "У середньому 20 хвилин: вводите ключове слово, отримуєте готову статтю на сайті. SERP-аналіз займає 2-3 хвилини, генерація 10-12 хвилин, публікація в CMS кілька секунд. Можете запускати кілька статей паралельно.",
-        "aPlain": "У середньому 20 хвилин: вводите ключове слово, отримуєте готову статтю на сайті. SERP-аналіз займає 2-3 хвилини, генерація 10-12 хвилин, публікація в CMS кілька секунд. Можете запускати кілька статей паралельно."
+        "q": "How long does one article actually take?",
+        "a": "On average 20 minutes: enter a keyword, get a published article on your site. SERP analysis takes 2–3 minutes, generation 10–12 minutes, CMS publishing a few seconds. You can run multiple articles in parallel.",
+        "aPlain": "On average 20 minutes: enter a keyword, get a published article on your site. SERP analysis takes 2–3 minutes, generation 10–12 minutes, CMS publishing a few seconds. You can run multiple articles in parallel."
       },
       {
-        "q": "Що таке Knowledge Base і навіщо вона?",
-        "a": "Це ваша база документів: опис продуктів, прайси, технічні характеристики, FAQ. AI бере звідти дані, коли пише, тому статті містять правильні факти, ціни й специфіку саме вашого бізнесу, а не загальні фрази.",
-        "aPlain": "Це ваша база документів: опис продуктів, прайси, технічні характеристики, FAQ. AI бере звідти дані, коли пише, тому статті містять правильні факти, ціни й специфіку саме вашого бізнесу, а не загальні фрази."
+        "q": "What is Knowledge Base and why do I need it?",
+        "a": "It's your document library: product descriptions, pricing, technical specs, FAQ. AI pulls data from it when writing, so articles contain accurate facts, prices, and details specific to your business — not generic phrases.",
+        "aPlain": "It's your document library: product descriptions, pricing, technical specs, FAQ. AI pulls data from it when writing, so articles contain accurate facts, prices, and details specific to your business — not generic phrases."
       },
       {
-        "q": "Чи підходить для агентства з кількома клієнтами?",
-        "a": "Так, саме для цього створені плани Team та Pro. Ви підключаєте кілька сайтів, налаштовуєте окремий Brand Voice для кожного клієнта, а з white-label клієнти навіть не знають, що ви використовуєте Draft2Live.",
-        "aPlain": "Так, саме для цього створені плани Team та Pro. Ви підключаєте кілька сайтів, налаштовуєте окремий Brand Voice для кожного клієнта, а з white-label клієнти навіть не знають, що ви використовуєте Draft2Live."
+        "q": "Is it suitable for an agency with multiple clients?",
+        "a": "Yes, that's exactly what the Team and Pro plans are for. You connect multiple sites, set up separate Brand Voice for each client, and with white-label clients don't even know you're using Draft2Live.",
+        "aPlain": "Yes, that's exactly what the Team and Pro plans are for. You connect multiple sites, set up separate Brand Voice for each client, and with white-label clients don't even know you're using Draft2Live."
       },
       {
-        "q": "Що якщо мені не підійде?",
-        "a": "Почніть з безкоштовного плану: 3 статті на місяць з повним SERP-аналізом та SEO-аудитом, без картки. На платних планах є 30-денне повернення грошей. Скасувати підписку можна в один клік у будь-який момент.",
-        "aPlain": "Почніть з безкоштовного плану: 3 статті на місяць з повним SERP-аналізом та SEO-аудитом, без картки. На платних планах є 30-денне повернення грошей. Скасувати підписку можна в один клік у будь-який момент."
+        "q": "What if it doesn't work for me?",
+        "a": "Start with the free plan: 3 articles per month with full SERP analysis and SEO audit, no card required. Paid plans come with a 30-day money-back guarantee. You can cancel your subscription in one click at any time.",
+        "aPlain": "Start with the free plan: 3 articles per month with full SERP analysis and SEO audit, no card required. Paid plans come with a 30-day money-back guarantee. You can cancel your subscription in one click at any time."
       }
     ]
   },
   "cta": {
-    "titlePart1": "Ваші конкуренти вже публікують.",
-    "titlePart2": "А ви?",
-    "subtitle": "3 статті безкоштовно. Без кредитної картки. Результат за 20 хвилин.",
-    "ctaPrimary": "Забронювати ранній доступ",
-    "ctaSecondary": "Замовити демо",
-    "trustLine": "127+ активних компаній • Рейтинг 4.8/5 • 30-денна гарантія повернення",
+    "titlePart1": "Your competitors are already publishing.",
+    "titlePart2": "Are you?",
+    "subtitle": "3 articles free. No credit card. Results in 20 minutes.",
+    "ctaPrimary": "Book early access",
+    "ctaSecondary": "Request a demo",
+    "trustLine": "127+ active companies • 4.8/5 rating • 30-day money-back guarantee",
     "imageAlt": "Draft2Live — AI-to-CMS publishing"
   },
   "footer": {
     "brand": {
-      "description": "Від ключового слова до статті на сайті за 20 хвилин. AI-платформа для SEO-контенту.",
-      "newsletterPlaceholder": "Email для SEO-порад",
-      "newsletterAriaLabel": "Email для підписки на розсилку",
-      "subscribe": "Підписатися"
+      "description": "From keyword to published article in 20 minutes. AI platform for SEO content.",
+      "newsletterPlaceholder": "Email for SEO tips",
+      "newsletterAriaLabel": "Email to subscribe to newsletter",
+      "subscribe": "Subscribe"
     },
     "product": {
-      "title": "Продукт",
-      "links": ["Можливості", "Тарифи", "API", "Інтеграції", "Оновлення"]
+      "title": "Product",
+      "links": ["Features", "Pricing", "API", "Integrations", "Updates"]
     },
     "company": {
-      "title": "Компанія",
-      "links": ["Про нас", "Блог", "Контакти", "Вакансії"]
+      "title": "Company",
+      "links": ["About", "Blog", "Contact", "Careers"]
     },
     "languages": {
-      "title": "Мови",
-      "links": ["Українська", "English", "Polski", "Deutsch"]
+      "title": "Languages",
+      "links": ["Українська", "English", "Polski", "Русский"]
     },
     "legal": {
-      "links": ["Правила", "Конфіденційність", "Cookies"]
+      "links": ["Terms", "Privacy", "Cookies"]
     },
-    "copyright": "© 2026 Draft2Live. Всі права захищені."
+    "copyright": "© 2026 Draft2Live. All rights reserved."
   },
   "earlyAccess": {
-    "closeAriaLabel": "Закрити",
-    "statusLabel": "Старт через кілька тижнів",
-    "title": "Будьте серед перших, хто публікує статті за 20 хвилин",
-    "subtitle": "Ранній доступ + знижка, якої не буде після запуску",
-    "bonus": "Перші 100 реєстрацій: план Connect на 30 днів безкоштовно",
-    "planBadge": "Обраний тариф: {plan}",
-    "emailPlaceholder": "Ваш email",
-    "gdprPrefix": "Погоджуюсь на обробку персональних даних згідно з",
-    "gdprLink": "Політикою конфіденційності",
-    "submit": "Забронювати ранній доступ",
-    "submitLoading": "Бронюємо...",
-    "noSpam": "Один лист коли запустимось. Жодних розсилок.",
-    "successTitle": "Ваше місце зарезервовано!",
-    "successLine1": "Ви у списку раннього доступу.",
-    "successPlanPrefix": "Тариф",
-    "successPlanSuffix": "закріплено за вами.",
-    "successEmailPrefix": "Напишемо на",
-    "successEmailSuffix": ", щойно все буде готово.",
-    "successButton": "Чудово, чекатиму!"
+    "closeAriaLabel": "Close",
+    "statusLabel": "Launching in a few weeks",
+    "title": "Be among the first to publish articles in 20 minutes",
+    "subtitle": "Early access + a discount that won't be available after launch",
+    "bonus": "First 100 sign-ups: Connect plan free for 30 days",
+    "planBadge": "Selected plan: {plan}",
+    "emailPlaceholder": "Your email",
+    "gdprPrefix": "I agree to the processing of personal data in accordance with the",
+    "gdprLink": "Privacy Policy",
+    "submit": "Book early access",
+    "submitLoading": "Booking...",
+    "noSpam": "One email when we launch. No spam.",
+    "successTitle": "Your spot is reserved!",
+    "successLine1": "You're on the early access list.",
+    "successPlanPrefix": "Plan",
+    "successPlanSuffix": "is secured for you.",
+    "successEmailPrefix": "We'll email",
+    "successEmailSuffix": "as soon as everything is ready.",
+    "successButton": "Great, I'll be waiting!"
   },
   "stickyMobileCTA": {
-    "cta": "Забронювати ранній доступ"
+    "cta": "Book early access"
   }
 }

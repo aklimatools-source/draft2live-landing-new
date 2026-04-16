@@ -2,7 +2,7 @@ import { defineRouting } from 'next-intl/routing';
 
 export const routing = defineRouting({
   // Add new locales here when adding translations
-  locales: ['uk', 'en'],
+  locales: ['uk', 'en', 'ru', 'pl'],
   defaultLocale: 'uk',
   // Keep locale visible in URL for all locales (no "as needed" hiding)
   localePrefix: 'always',

@@ -183,7 +183,7 @@ export default function Pricing() {
                           className="text-4xl font-heading font-black text-white"
                           style={{ letterSpacing: '-0.03em' }}
                         >
-                          ${isAnnual ? plan.annualPrice : plan.monthlyPrice}
+                          €{isAnnual ? plan.annualPrice : plan.monthlyPrice}
                         </motion.span>
                       </AnimatePresence>
                       <span className="text-text-muted text-sm">{t('perMonth')}</span>

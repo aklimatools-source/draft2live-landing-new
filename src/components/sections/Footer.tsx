@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 
 const productHrefs = ['#features', '#pricing', '#', '#', '#'];
 const companyHrefs = ['#', '#', 'mailto:info@draft2live.ai', '#'];
-const languageHrefs = ['#', '#', '#', '#'];
+const languageHrefs = ['/uk/', '/en/', '/ru/', '/pl/'];
 const legalHrefs = ['/terms', '/privacy', '/cookies'];
 
 function LinkedInIcon() {

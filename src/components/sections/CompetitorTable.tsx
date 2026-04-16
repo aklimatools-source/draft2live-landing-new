@@ -17,7 +17,7 @@ interface ComparisonRow {
 const rows: ComparisonRow[] = [
   {
     feature: 'Ціна/міс',
-    values: { Draft2Live: '$49', Semrush: '$129', SurferSEO: '$89', Jasper: '$59', ChatGPT: '$20' },
+    values: { Draft2Live: '€49', Semrush: '€129', SurferSEO: '€89', Jasper: '€59', ChatGPT: '€20' },
   },
   {
     feature: 'SERP аналіз',
