@@ -277,8 +277,11 @@ export default function Hero() {
           >
             <span className="block">{t('titleLine1')}</span>
             <span className="block min-h-[1.15em]">
-              {t('titleLine2Prefix')}{' '}
-              <span className="inline-block text-left" style={{ minWidth: '16ch' }}>
+              {/* Prefix + dynamic word as ONE inline-block unit — prevents
+                  "do" from orphaning on its own line on narrow viewports
+                  (e.g. PL where titleLine1 is already ~19ch wide). */}
+              <span className="inline-block text-left whitespace-nowrap" style={{ minWidth: '14ch' }}>
+                {t('titleLine2Prefix')}{' '}
                 <span className="gradient-text">{text}</span>
                 <span className="typing-cursor" />
               </span>

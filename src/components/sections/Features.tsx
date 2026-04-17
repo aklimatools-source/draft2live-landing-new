@@ -380,17 +380,22 @@ function KnowledgeBaseVisual() {
 /* ── White-label Visual ── */
 function WhiteLabelVisual() {
   const t = useTranslations('features.visuals.whiteLabel');
+  // Brand names are locale-aware — UA suffix belongs on UK landing only.
+  // Styling (colors) stays in code; only the name/URL varies per locale.
+  const names = t.raw('brands') as string[];
+  const styles = [
+    { color: 'bg-teal-500', accent: 'border-teal-500/30' },
+    { color: 'bg-[#002365]', accent: 'border-[#002365]/30' },
+    { color: 'bg-[#e1e1e1]', accent: 'border-[#e1e1e1]/30' },
+  ];
+  const brands = names.map((name, i) => ({ name, ...styles[i % styles.length] }));
   return (
     <div className="relative h-full w-full rounded-2xl overflow-hidden bg-surface/50 border border-border/40 p-5 md:p-6">
       <div className="absolute w-48 h-48 rounded-full bg-teal-500/10 blur-3xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
       <div className="relative space-y-3">
         <div className="text-[10px] text-text-muted uppercase tracking-wider">{t('title')}</div>
         {/* Brand cards */}
-        {[
-          { name: 'ContentBox Agency', color: 'bg-teal-500', accent: 'border-teal-500/30' },
-          { name: 'SEO Masters UA', color: 'bg-[#002365]', accent: 'border-[#002365]/30' },
-          { name: 'Digital Growth', color: 'bg-[#e1e1e1]', accent: 'border-[#e1e1e1]/30' },
-        ].map((brand, i) => (
+        {brands.map((brand, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, x: 10 }}

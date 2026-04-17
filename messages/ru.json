@@ -195,7 +195,8 @@
         "indexed": "3 документа проиндексированы"
       },
       "whiteLabel": {
-        "title": "Ваш бренд"
+        "title": "Ваш бренд",
+        "brands": ["ContentBox Agency", "SEO Masters", "Digital Growth"]
       }
     }
   },

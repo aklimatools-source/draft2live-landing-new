@@ -195,7 +195,8 @@
         "indexed": "3 dokumenty zindeksowane"
       },
       "whiteLabel": {
-        "title": "Twoja marka"
+        "title": "Twoja marka",
+        "brands": ["ContentBox Agency", "SEO Masters PL", "Digital Growth"]
       }
     }
   },
