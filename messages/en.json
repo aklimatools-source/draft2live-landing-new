@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "title": "Draft2Live — From keyword to published article in 20 minutes",
+    "title": "Draft2Live: from keyword to published article in 20 minutes",
     "description": "AI platform for SEO content: country-specific SERP analysis, Brand Voice, SEO audit, and one-click publishing to WordPress or Drupal.",
-    "ogTitle": "Draft2Live — AI for SEO content that publishes itself",
+    "ogTitle": "Draft2Live: AI for SEO content that publishes itself",
     "ogDescription": "Enter a keyword. Get a published article on your site in 20 minutes. SERP analysis, Brand Voice, CMS publishing.",
-    "twitterTitle": "Draft2Live — AI for SEO content",
+    "twitterTitle": "Draft2Live: AI for SEO content",
     "twitterDescription": "From keyword to published article in 20 minutes. SERP analysis, Brand Voice, one-click publishing."
   },
   "jsonLd": {
@@ -25,8 +25,8 @@
   "hero": {
     "badge": "5,000+ articles published · 45 languages · WordPress + Drupal",
     "titleLine1": "From keyword",
-    "titleLine2Prefix": "to",
-    "titleLine3": "on your site in 20 minutes",
+    "titleLine2Prefix": "to a published",
+    "titleLine3": "in 20 minutes",
     "typingWords": ["SEO article", "blog post", "product review", "guide", "long-read"],
     "subtitle": "Enter a phrase. AI analyzes the TOP 10 in your target country and writes an article in your brand's style. Publish to WordPress or Drupal in one click.",
     "searchPlaceholder": "Enter a keyword for your article...",
@@ -36,10 +36,10 @@
     "chipExamples": [
       "how to choose a CRM",
       "SEO for e-commerce",
-      "laptop reviews 2025",
+      "laptop reviews 2026",
       "SaaS marketing"
     ],
-    "microcopy": "No credit card • 3 articles free • Setup in 2 minutes",
+    "microcopy": "No credit card · 3 articles free · Setup in 2 minutes",
     "videoAriaLabel": "Watch Draft2Live demo",
     "videoTitle": "Watch demo",
     "videoSubtitle": "2 min, from keyword to published article",
@@ -85,7 +85,7 @@
     "items": [
       {
         "title": "Country-specific SERP analysis",
-        "desc": "Analyzes Google's TOP 10 in your specific country. Not generic data — real competitors in your market.",
+        "desc": "Analyzes Google's TOP 10 in your specific country. Not generic data: real competitors in your market.",
         "details": [
           "45 languages with geo-targeting",
           "Structure and keywords of each competitor",
@@ -95,7 +95,7 @@
       },
       {
         "title": "Brand Voice",
-        "desc": "Upload 10+ texts and AI adopts your style, tone, and terminology. Every article sounds like yours.",
+        "desc": "Upload 10+ texts and AI learns your style, tone, and terminology. Every article sounds like yours.",
         "details": [
           "Analyzes tone, vocabulary, structure",
           "Separate profile for each project",
@@ -355,8 +355,8 @@
     "titlePart2": "Are you?",
     "subtitle": "3 articles free. No credit card. Results in 20 minutes.",
     "ctaPrimary": "Start free",
-    "ctaSecondary": "Request a demo",
-    "trustLine": "WordPress + Drupal • 45 languages with geo-targeting • 30-day money-back guarantee",
+    "ctaSecondary": "Watch demo",
+    "trustLine": "WordPress + Drupal · 45 languages with geo-targeting · 30-day money-back guarantee",
     "imageAlt": "Draft2Live — AI-to-CMS publishing"
   },
   "footer": {
