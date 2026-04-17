@@ -28,6 +28,9 @@ export async function generateMetadata({
         en: '/en/',
         ru: '/ru/',
         pl: '/pl/',
+        // x-default points to the default locale (uk per routing config) and
+        // is used by Google for users whose language doesn't match any locale.
+        'x-default': '/uk/',
       },
     },
     openGraph: {
@@ -37,13 +40,15 @@ export async function generateMetadata({
       siteName: 'Draft2Live',
       locale: locale === 'uk' ? 'uk_UA' : locale === 'ru' ? 'ru_RU' : locale === 'pl' ? 'pl_PL' : 'en_US',
       type: 'website',
-      images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+      // Using brand-card.png until dedicated OG images are created per locale.
+      // Previous /og-image.png returned 404, breaking Facebook/LinkedIn/Twitter previews.
+      images: [{ url: '/brand-card.png', width: 1200, height: 630, alt: 'Draft2Live — AI-to-CMS publishing' }],
     },
     twitter: {
       card: 'summary_large_image',
       title: t('twitterTitle'),
       description: t('twitterDescription'),
-      images: ['/og-image.png'],
+      images: ['/brand-card.png'],
     },
   };
 }
