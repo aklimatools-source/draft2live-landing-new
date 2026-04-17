@@ -201,9 +201,10 @@ export default function TermsPage() {
             {/* §16 */}
             <section>
               <h2 className="text-xl font-semibold text-white mb-3">&sect;16. Контакти</h2>
-              <p>З усіх питань щодо цих Правил звертайтесь:</p>
               <ul className="list-none mt-3 space-y-1.5">
                 <li><strong className="text-white">Оператор:</strong> Aklima Polska sp. z o.o.</li>
+                <li><strong className="text-white">Адреса:</strong> ul. Post&#281;pu 15, 02-676 Warszawa, Polska</li>
+                <li><strong className="text-white">KRS:</strong> 0000978391 | <strong className="text-white">NIP:</strong> 9512544995 | <strong className="text-white">REGON:</strong> 522520422</li>
                 <li><strong className="text-white">Email:</strong> <a href="mailto:info@draft2live.ai" className="text-primary hover:underline">info@draft2live.ai</a></li>
                 <li><strong className="text-white">Веб-сайт:</strong> <a href="https://draft2live.ai" className="text-primary hover:underline">draft2live.ai</a></li>
               </ul>
