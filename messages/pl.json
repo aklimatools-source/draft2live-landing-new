@@ -14,7 +14,7 @@
     "ariaLabel": "Nawigacja główna",
     "skipToContent": "Przejdź do treści",
     "menu": "Menu",
-    "cta": "Wczesny dostęp",
+    "cta": "Zacznij za darmo",
     "links": {
       "features": "Funkcje",
       "howItWorks": "Jak to działa",
@@ -23,7 +23,7 @@
     }
   },
   "hero": {
-    "badge": "10 000+ artykułów dla 127+ firm",
+    "badge": "5 000+ opublikowanych artykułów · 45 języków · WordPress + Drupal",
     "titleLine1": "Od słowa kluczowego",
     "titleLine2Prefix": "do",
     "titleLine3": "na stronie w 20 minut",
@@ -44,9 +44,9 @@
     "videoTitle": "Obejrzyj demo",
     "videoSubtitle": "2 min, od słowa kluczowego do artykułu na stronie",
     "trustStats": [
-      { "value": "10 000+", "label": "opublikowanych artykułów" },
-      { "value": "127+", "label": "firm nam zaufało" },
-      { "value": "45", "label": "języków treści" }
+      { "value": "5 000+", "label": "opublikowanych artykułów" },
+      { "value": "45", "label": "języków z geo-targetingiem" },
+      { "value": "WordPress", "label": "+ Drupal integracja" }
     ]
   },
   "logoMarquee": {
@@ -315,7 +315,7 @@
     },
     "microCta": {
       "text": "Masz jeszcze pytania? Wypróbuj sam — pierwsze 3 artykuły za darmo.",
-      "button": "Zarezerwuj wczesny dostęp →"
+      "button": "Zacznij za darmo →"
     },
     "items": [
       {
@@ -325,8 +325,8 @@
       },
       {
         "q": "Czy Google ukarze za treści AI?",
-        "a": "Google mówi wprost: liczy się jakość treści, a nie sposób ich tworzenia. Draft2Live pisze na podstawie rzeczywistych danych SERP, sprawdza każdy artykuł wg 8 metryk SEO i nie publikuje, dopóki wynik nie osiągnie 85. Przy ponad 10 000 artykułów żaden klient nie otrzymał kary.",
-        "aPlain": "Google mówi wprost: liczy się jakość treści, a nie sposób ich tworzenia. Draft2Live pisze na podstawie rzeczywistych danych SERP, sprawdza każdy artykuł wg 8 metryk SEO i nie publikuje, dopóki wynik nie osiągnie 85. Przy ponad 10 000 artykułów żaden klient nie otrzymał kary."
+        "a": "Google mówi wprost: liczy się jakość treści, a nie sposób ich tworzenia. Draft2Live pisze na podstawie rzeczywistych danych SERP, sprawdza każdy artykuł wg 8 metryk SEO i nie publikuje, dopóki wynik nie osiągnie 85. Przy ponad 5 000 opublikowanych artykułów żaden klient nie otrzymał kary.",
+        "aPlain": "Google mówi wprost: liczy się jakość treści, a nie sposób ich tworzenia. Draft2Live pisze na podstawie rzeczywistych danych SERP, sprawdza każdy artykuł wg 8 metryk SEO i nie publikuje, dopóki wynik nie osiągnie 85. Przy ponad 5 000 opublikowanych artykułów żaden klient nie otrzymał kary."
       },
       {
         "q": "Ile czasu naprawdę zajmuje jeden artykuł?",
@@ -354,9 +354,9 @@
     "titlePart1": "Twoja konkurencja już publikuje.",
     "titlePart2": "A Ty?",
     "subtitle": "3 artykuły za darmo. Bez karty kredytowej. Wyniki w 20 minut.",
-    "ctaPrimary": "Zarezerwuj wczesny dostęp",
+    "ctaPrimary": "Zacznij za darmo",
     "ctaSecondary": "Zamów demo",
-    "trustLine": "127+ aktywnych firm • Ocena 4.8/5 • 30-dniowa gwarancja zwrotu",
+    "trustLine": "WordPress + Drupal • 45 języków z geo-targetingiem • 30-dniowa gwarancja zwrotu",
     "imageAlt": "Draft2Live — AI-to-CMS publishing"
   },
   "footer": {
@@ -387,13 +387,13 @@
     "closeAriaLabel": "Zamknij",
     "statusLabel": "Start za kilka tygodni",
     "title": "Bądź wśród pierwszych, którzy publikują artykuły w 20 minut",
-    "subtitle": "Wczesny dostęp + zniżka, której nie będzie po premierze",
+    "subtitle": "3 artykuły za darmo + pierwszeństwo przy starcie",
     "bonus": "Pierwszych 100 rejestracji: plan Connect na 30 dni za darmo",
     "planBadge": "Wybrany plan: {plan}",
     "emailPlaceholder": "Twój email",
     "gdprPrefix": "Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z",
     "gdprLink": "Polityką prywatności",
-    "submit": "Zarezerwuj wczesny dostęp",
+    "submit": "Uzyskaj darmowy dostęp",
     "submitLoading": "Rezerwujemy...",
     "noSpam": "Jeden email, gdy wystartujemy. Żadnego spamu.",
     "successTitle": "Twoje miejsce zarezerwowane!",
@@ -405,6 +405,6 @@
     "successButton": "Świetnie, poczekam!"
   },
   "stickyMobileCTA": {
-    "cta": "Zarezerwuj wczesny dostęp"
+    "cta": "Zacznij za darmo"
   }
 }

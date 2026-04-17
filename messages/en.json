@@ -14,7 +14,7 @@
     "ariaLabel": "Main navigation",
     "skipToContent": "Skip to content",
     "menu": "Menu",
-    "cta": "Early Access",
+    "cta": "Start free",
     "links": {
       "features": "Features",
       "howItWorks": "How It Works",
@@ -23,7 +23,7 @@
     }
   },
   "hero": {
-    "badge": "10,000+ articles for 127+ companies",
+    "badge": "5,000+ articles published · 45 languages · WordPress + Drupal",
     "titleLine1": "From keyword",
     "titleLine2Prefix": "to",
     "titleLine3": "on your site in 20 minutes",
@@ -44,9 +44,9 @@
     "videoTitle": "Watch demo",
     "videoSubtitle": "2 min, from keyword to published article",
     "trustStats": [
-      { "value": "10,000+", "label": "articles published" },
-      { "value": "127+", "label": "companies trust us" },
-      { "value": "45", "label": "content languages" }
+      { "value": "5,000+", "label": "articles published" },
+      { "value": "45", "label": "languages with geo-targeting" },
+      { "value": "WordPress", "label": "+ Drupal integration" }
     ]
   },
   "logoMarquee": {
@@ -315,7 +315,7 @@
     },
     "microCta": {
       "text": "Still have questions? Try it yourself — first 3 articles are free.",
-      "button": "Book early access →"
+      "button": "Start free →"
     },
     "items": [
       {
@@ -325,8 +325,8 @@
       },
       {
         "q": "Won't Google penalize AI content?",
-        "a": "Google states clearly: content quality is what matters, not how it's created. Draft2Live writes based on real SERP data, checks every article across 8 SEO metrics, and won't publish until the score reaches 85. Across 10,000+ articles, no client has received penalties.",
-        "aPlain": "Google states clearly: content quality is what matters, not how it's created. Draft2Live writes based on real SERP data, checks every article across 8 SEO metrics, and won't publish until the score reaches 85. Across 10,000+ articles, no client has received penalties."
+        "a": "Google states clearly: content quality is what matters, not how it's created. Draft2Live writes based on real SERP data, checks every article across 8 SEO metrics, and won't publish until the score reaches 85. Across 5,000+ published articles, no client has received penalties.",
+        "aPlain": "Google states clearly: content quality is what matters, not how it's created. Draft2Live writes based on real SERP data, checks every article across 8 SEO metrics, and won't publish until the score reaches 85. Across 5,000+ published articles, no client has received penalties."
       },
       {
         "q": "How long does one article actually take?",
@@ -354,9 +354,9 @@
     "titlePart1": "Your competitors are already publishing.",
     "titlePart2": "Are you?",
     "subtitle": "3 articles free. No credit card. Results in 20 minutes.",
-    "ctaPrimary": "Book early access",
+    "ctaPrimary": "Start free",
     "ctaSecondary": "Request a demo",
-    "trustLine": "127+ active companies • 4.8/5 rating • 30-day money-back guarantee",
+    "trustLine": "WordPress + Drupal • 45 languages with geo-targeting • 30-day money-back guarantee",
     "imageAlt": "Draft2Live — AI-to-CMS publishing"
   },
   "footer": {
@@ -387,13 +387,13 @@
     "closeAriaLabel": "Close",
     "statusLabel": "Launching in a few weeks",
     "title": "Be among the first to publish articles in 20 minutes",
-    "subtitle": "Early access + a discount that won't be available after launch",
+    "subtitle": "3 articles free + priority when we launch",
     "bonus": "First 100 sign-ups: Connect plan free for 30 days",
     "planBadge": "Selected plan: {plan}",
     "emailPlaceholder": "Your email",
     "gdprPrefix": "I agree to the processing of personal data in accordance with the",
     "gdprLink": "Privacy Policy",
-    "submit": "Book early access",
+    "submit": "Get free access",
     "submitLoading": "Booking...",
     "noSpam": "One email when we launch. No spam.",
     "successTitle": "Your spot is reserved!",
@@ -405,6 +405,6 @@
     "successButton": "Great, I'll be waiting!"
   },
   "stickyMobileCTA": {
-    "cta": "Book early access"
+    "cta": "Start free"
   }
 }
