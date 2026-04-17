@@ -70,7 +70,9 @@ async function getJsonLd(locale: string) {
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Web',
     offers: { '@type': 'AggregateOffer', lowPrice: '0', highPrice: '399', priceCurrency: 'EUR', offerCount: '4' },
-    aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.8', ratingCount: '127' },
+    // aggregateRating removed: we don't have verified ratings from a reputable source yet.
+    // Adding fake ratings to schema violates Google's structured data guidelines and can
+    // result in manual action. Will be re-added once we have G2/Capterra/Trustpilot reviews.
   };
 
   // Read the 6 FAQ items from translations
