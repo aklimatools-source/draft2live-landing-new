@@ -27,7 +27,7 @@
     "titleLine1": "From keyword",
     "titleLine2Prefix": "to",
     "titleLine3": "live on your site in 20 min",
-    "typingWords": ["an article", "a blog post", "a product review", "a guide", "a long-read"],
+    "typingWords": ["an SEO article", "a blog post", "a landing page", "a how-to guide", "a product review"],
     "subtitle": "Enter a phrase. AI analyzes the TOP 10 in your target country and writes an article in your brand's style. Publish to WordPress or Drupal in one click.",
     "searchPlaceholder": "Enter a keyword for your article...",
     "searchAriaLabel": "Keyword for article",
@@ -380,9 +380,9 @@
         "aPlain": "ChatGPT generates text from scratch without your market context. Draft2Live first analyzes Google's TOP 10 in your specific country, studies competitor structure and keywords, then writes an article in your style and publishes it to your CMS with meta tags and images. It's not a text generator — it's a full cycle: research, writing, publishing."
       },
       {
-        "q": "Won't Google penalize AI content?",
-        "a": "Google states clearly: content quality is what matters, not how it's created. Draft2Live writes based on real SERP data, checks every article across 8 SEO metrics, and won't publish until the score reaches 85. Across 5,000+ published articles, no client has received penalties.",
-        "aPlain": "Google states clearly: content quality is what matters, not how it's created. Draft2Live writes based on real SERP data, checks every article across 8 SEO metrics, and won't publish until the score reaches 85. Across 5,000+ published articles, no client has received penalties."
+        "q": "Does Google penalize AI content?",
+        "a": "No. Google's March 2024 Helpful Content Update is explicit: quality matters, not origin. Ahrefs' 2024 analysis of 6.8K articles found 86.5% of AI content optimized for SERP intent ranks successfully on Google. Draft2Live audits every article on 8 SEO metrics (intent, readability, meta, structure) and won't publish until the score reaches 85+. You edit and approve before it goes live. Across 5,000+ of our published articles, zero clients have received penalties.",
+        "aPlain": "No. Google's March 2024 Helpful Content Update is explicit: quality matters, not origin. Ahrefs' 2024 analysis of 6.8K articles found 86.5% of AI content optimized for SERP intent ranks successfully on Google. Draft2Live audits every article on 8 SEO metrics (intent, readability, meta, structure) and won't publish until the score reaches 85+. You edit and approve before it goes live. Across 5,000+ of our published articles, zero clients have received penalties."
       },
       {
         "q": "How long does one article actually take?",
