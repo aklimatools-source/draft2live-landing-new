@@ -46,7 +46,7 @@
     "trustStats": [
       { "value": "5,000+", "label": "articles published" },
       { "value": "45", "label": "languages with geo-targeting" },
-      { "value": "WordPress", "label": "+ Drupal integration" }
+      { "value": "2", "label": "CMS: WordPress + Drupal" }
     ]
   },
   "logoMarquee": {
@@ -446,6 +446,7 @@
     "subtitle": "3 articles free + priority when we launch",
     "bonus": "First 100 sign-ups: Connect plan free for 30 days",
     "planBadge": "Selected plan: {plan}",
+    "keywordBadge": "Your keyword: {keyword}",
     "emailPlaceholder": "Your email",
     "gdprPrefix": "I agree to the processing of personal data in accordance with the",
     "gdprLink": "Privacy Policy",

@@ -5,13 +5,15 @@ import { createContext, useContext, useState, useCallback, ReactNode } from 'rea
 interface EarlyAccessContextType {
   isOpen: boolean;
   selectedPlan: string | null;
-  open: (plan?: string) => void;
+  keyword: string | null;
+  open: (plan?: string, keyword?: string) => void;
   close: () => void;
 }
 
 const EarlyAccessContext = createContext<EarlyAccessContextType>({
   isOpen: false,
   selectedPlan: null,
+  keyword: null,
   open: () => {},
   close: () => {},
 });
@@ -19,9 +21,11 @@ const EarlyAccessContext = createContext<EarlyAccessContextType>({
 export function EarlyAccessProvider({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
+  const [keyword, setKeyword] = useState<string | null>(null);
 
-  const open = useCallback((plan?: string) => {
+  const open = useCallback((plan?: string, kw?: string) => {
     setSelectedPlan(plan || null);
+    setKeyword(kw || null);
     setIsOpen(true);
     document.body.style.overflow = 'hidden';
   }, []);
@@ -29,11 +33,12 @@ export function EarlyAccessProvider({ children }: { children: ReactNode }) {
   const close = useCallback(() => {
     setIsOpen(false);
     setSelectedPlan(null);
+    setKeyword(null);
     document.body.style.overflow = '';
   }, []);
 
   return (
-    <EarlyAccessContext.Provider value={{ isOpen, selectedPlan, open, close }}>
+    <EarlyAccessContext.Provider value={{ isOpen, selectedPlan, keyword, open, close }}>
       {children}
     </EarlyAccessContext.Provider>
   );

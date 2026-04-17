@@ -35,18 +35,50 @@ function CheckmarkAnimation() {
 
 export default function EarlyAccessModal() {
   const t = useTranslations('earlyAccess');
-  const { isOpen, selectedPlan, close } = useEarlyAccess();
+  const { isOpen, selectedPlan, keyword, close } = useEarlyAccess();
   const [email, setEmail] = useState('');
   const [gdprConsent, setGdprConsent] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const emailRef = useRef<HTMLInputElement>(null);
-  // Focus input on open
+  const previouslyFocusedRef = useRef<HTMLElement | null>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
+  // Focus input on open + remember where focus came from so we can restore it.
   useEffect(() => {
     if (isOpen && !isSubmitted) {
+      previouslyFocusedRef.current = document.activeElement as HTMLElement | null;
       setTimeout(() => emailRef.current?.focus(), 200);
     }
+    if (!isOpen && previouslyFocusedRef.current) {
+      previouslyFocusedRef.current.focus();
+      previouslyFocusedRef.current = null;
+    }
   }, [isOpen, isSubmitted]);
+
+  // Focus trap: keep Tab/Shift+Tab inside the modal while open.
+  useEffect(() => {
+    if (!isOpen) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key !== 'Tab') return;
+      const root = modalRef.current;
+      if (!root) return;
+      const focusables = root.querySelectorAll<HTMLElement>(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      if (focusables.length === 0) return;
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [isOpen]);
 
   // Reset on close
   useEffect(() => {
@@ -97,6 +129,7 @@ export default function EarlyAccessModal() {
           'form-name': 'early-access',
           email,
           plan: selectedPlan || '',
+          keyword: keyword || '',
           landing: 'Draft2Live',
           locale,
           gdprConsent: String(gdprConsent),
@@ -127,6 +160,10 @@ export default function EarlyAccessModal() {
 
           {/* Modal */}
           <motion.div
+            ref={modalRef}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="early-access-title"
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
@@ -163,7 +200,10 @@ export default function EarlyAccessModal() {
                         <div className="w-1.5 h-1.5 rounded-full bg-teal-400 animate-pulse" />
                         <span className="text-teal-300 text-xs font-normal">{t('statusLabel')}</span>
                       </div>
-                      <h3 className="text-xl sm:text-2xl font-heading font-bold text-white leading-tight">
+                      <h3
+                        id="early-access-title"
+                        className="text-xl sm:text-2xl font-heading font-bold text-white leading-tight"
+                      >
                         {t('title')}
                       </h3>
                       <p className="text-text-secondary text-sm mt-3">
@@ -179,6 +219,16 @@ export default function EarlyAccessModal() {
                       <div className="flex items-center justify-center mb-4">
                         <span className="px-3 py-1 text-xs font-bold rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-300">
                           {t('planBadge', { plan: selectedPlan })}
+                        </span>
+                      </div>
+                    )}
+
+                    {/* Keyword carried from hero — shows the user their typed
+                        phrase is captured, addressing bait-and-switch critique. */}
+                    {keyword && (
+                      <div className="flex items-center justify-center mb-4">
+                        <span className="px-3 py-1 text-xs rounded-full bg-white/5 border border-white/10 text-text-secondary max-w-full truncate">
+                          {t('keywordBadge', { keyword })}
                         </span>
                       </div>
                     )}
@@ -205,7 +255,12 @@ export default function EarlyAccessModal() {
                         />
                         <span className="text-text-muted text-[11px] leading-relaxed group-hover:text-text-secondary transition-colors">
                           {t('gdprPrefix')}{' '}
-                          <a href="#" className="text-teal-400 hover:text-teal-300 underline underline-offset-2">
+                          <a
+                            href="/privacy/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-teal-400 hover:text-teal-300 underline underline-offset-2"
+                          >
                             {t('gdprLink')}
                           </a>
                         </span>

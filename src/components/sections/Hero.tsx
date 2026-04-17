@@ -223,6 +223,10 @@ export default function Hero() {
   const [text, setText] = useState('');
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  // User-typed keyword is passed into the early-access modal so the user sees
+  // their own phrase carried forward instead of the input being silently
+  // discarded (bait-and-switch issue flagged in UX review).
+  const [userKeyword, setUserKeyword] = useState('');
   const { open: openEarlyAccess } = useEarlyAccess();
 
   const tick = useCallback(() => {
@@ -307,24 +311,45 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
             className="mt-10 max-w-xl mx-auto"
           >
-            <div className="w-full flex flex-col sm:flex-row items-stretch sm:items-center rounded-2xl p-1.5 bg-white/40 border border-white/50 backdrop-blur-xl shadow-[0_4px_30px_rgba(0,0,0,0.2),0_0_40px_rgba(4,184,183,0.1),inset_0_1px_0_rgba(255,255,255,0.3)]">
-              <input type="text" placeholder={t('searchPlaceholder')} aria-label={t('searchAriaLabel')}
-                className="flex-1 min-w-0 bg-transparent px-4 sm:px-5 py-3.5 sm:py-4 text-white placeholder:text-white/70 outline-none text-sm sm:text-base" />
-              <motion.button onClick={() => openEarlyAccess()}
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                openEarlyAccess(undefined, userKeyword || undefined);
+              }}
+              className="w-full flex flex-col sm:flex-row items-stretch sm:items-center rounded-2xl p-1.5 bg-white/40 border border-white/50 backdrop-blur-xl shadow-[0_4px_30px_rgba(0,0,0,0.2),0_0_40px_rgba(4,184,183,0.1),inset_0_1px_0_rgba(255,255,255,0.3)]"
+            >
+              <input
+                type="text"
+                value={userKeyword}
+                onChange={(e) => setUserKeyword(e.target.value)}
+                placeholder={t('searchPlaceholder')}
+                aria-label={t('searchAriaLabel')}
+                className="flex-1 min-w-0 bg-transparent px-4 sm:px-5 py-3.5 sm:py-4 text-white placeholder:text-white/70 outline-none text-sm sm:text-base"
+              />
+              <motion.button
+                type="submit"
                 whileHover={{ scale: 1.04, boxShadow: '0 0 20px rgba(4,184,183,0.3)' }}
                 whileTap={{ scale: 0.97 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 17 }}
-                className="px-6 py-3.5 text-sm font-bold rounded-xl bg-teal-600 text-white whitespace-nowrap hover:bg-teal-500 transition-colors shrink-0 cursor-pointer">
+                className="px-6 py-3.5 text-sm font-bold rounded-xl bg-teal-600 text-white whitespace-nowrap hover:bg-teal-500 transition-colors shrink-0 cursor-pointer"
+              >
                 {t('searchCta')}
               </motion.button>
-            </div>
+            </form>
 
-            {/* Example chips */}
+            {/* Example chips — clicking one pre-fills the keyword field AND
+                opens the modal with that keyword so user intent is captured. */}
             <div className="flex flex-wrap items-center justify-center gap-2 mt-4">
               <span className="text-text-muted text-xs sm:text-sm">{t('exampleLabel')}</span>
               {chipExamples.map((chip, i) => (
-                <button key={i} onClick={() => openEarlyAccess()}
-                  className="px-4 py-2 text-sm text-text-secondary bg-white/[0.04] border border-white/10 rounded-full hover:bg-teal-500/10 hover:border-teal-500/20 hover:text-teal-300 transition-all cursor-pointer">
+                <button
+                  key={i}
+                  onClick={() => {
+                    setUserKeyword(chip);
+                    openEarlyAccess(undefined, chip);
+                  }}
+                  className="px-4 py-2 text-sm text-text-secondary bg-white/[0.04] border border-white/10 rounded-full hover:bg-teal-500/10 hover:border-teal-500/20 hover:text-teal-300 transition-all cursor-pointer"
+                >
                   {chip}
                 </button>
               ))}

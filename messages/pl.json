@@ -27,7 +27,7 @@
     "titleLine1": "Od słowa kluczowego",
     "titleLine2Prefix": "do",
     "titleLine3": "na stronie w 20 minut",
-    "typingWords": ["artykułu SEO", "wpisu na bloga", "recenzji", "poradnika", "eksperckiego"],
+    "typingWords": ["artykułu SEO", "wpisu na blog", "recenzji", "poradnika", "tekstu eksperckiego"],
     "subtitle": "Podaj frazę. AI przeanalizuje TOP 10 w wybranym kraju i napisze artykuł w stylu Twojej marki. Opublikuj w WordPress lub Drupal jednym kliknięciem.",
     "searchPlaceholder": "Wpisz słowo kluczowe dla artykułu...",
     "searchAriaLabel": "Słowo kluczowe dla artykułu",
@@ -46,7 +46,7 @@
     "trustStats": [
       { "value": "5 000+", "label": "opublikowanych artykułów" },
       { "value": "45", "label": "języków z geo-targetingiem" },
-      { "value": "WordPress", "label": "+ Drupal integracja" }
+      { "value": "2", "label": "CMS: WordPress + Drupal" }
     ]
   },
   "logoMarquee": {
@@ -446,6 +446,7 @@
     "subtitle": "3 artykuły za darmo + pierwszeństwo przy starcie",
     "bonus": "Pierwszych 100 rejestracji: plan Connect na 30 dni za darmo",
     "planBadge": "Wybrany plan: {plan}",
+    "keywordBadge": "Twoje słowo kluczowe: {keyword}",
     "emailPlaceholder": "Twój email",
     "gdprPrefix": "Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z",
     "gdprLink": "Polityką prywatności",
