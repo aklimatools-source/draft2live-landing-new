@@ -27,7 +27,7 @@
     "titleLine1": "Od słowa kluczowego",
     "titleLine2Prefix": "do",
     "titleLine3": "na stronie w 20 minut",
-    "typingWords": ["artykułu SEO", "wpisu na bloga", "recenzji produktu", "poradnika", "artykułu eksperckiego"],
+    "typingWords": ["artykułu SEO", "wpisu na bloga", "recenzji", "poradnika", "eksperckiego"],
     "subtitle": "Podaj frazę. AI przeanalizuje TOP 10 w wybranym kraju i napisze artykuł w stylu Twojej marki. Opublikuj w WordPress lub Drupal jednym kliknięciem.",
     "searchPlaceholder": "Wpisz słowo kluczowe dla artykułu...",
     "searchAriaLabel": "Słowo kluczowe dla artykułu",

@@ -278,7 +278,7 @@ export default function Hero() {
             <span className="block">{t('titleLine1')}</span>
             <span className="block min-h-[1.15em]">
               {t('titleLine2Prefix')}{' '}
-              <span className="inline-block text-left" style={{ minWidth: '10ch' }}>
+              <span className="inline-block text-left" style={{ minWidth: '16ch' }}>
                 <span className="gradient-text">{text}</span>
                 <span className="typing-cursor" />
               </span>
