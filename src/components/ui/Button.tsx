@@ -5,6 +5,8 @@ import { ReactNode } from 'react';
 interface Props {
   children: ReactNode;
   href?: string;
+  target?: string;
+  rel?: string;
   onClick?: () => void;
   variant?: 'primary' | 'secondary' | 'ghost';
   size?: 'sm' | 'md' | 'lg';
@@ -23,7 +25,7 @@ const variants = {
   ghost: 'text-text-secondary hover:text-white font-normal',
 };
 
-export default function Button({ children, href, onClick, variant = 'primary', size = 'md', className = '' }: Props) {
+export default function Button({ children, href, target, rel, onClick, variant = 'primary', size = 'md', className = '' }: Props) {
   const cls = `inline-flex items-center justify-center rounded-xl transition-all duration-300 cursor-pointer ${sizes[size]} ${variants[variant]} ${className}`;
 
   const springHover = variant === 'primary'
@@ -42,7 +44,7 @@ export default function Button({ children, href, onClick, variant = 'primary', s
 
   if (href) {
     return (
-      <motion.a href={href} className={cls} whileHover={springHover} whileTap={springTap} transition={springTransition}>
+      <motion.a href={href} target={target} rel={rel} className={cls} whileHover={springHover} whileTap={springTap} transition={springTransition}>
         {children}
       </motion.a>
     );

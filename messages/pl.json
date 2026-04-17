@@ -270,6 +270,7 @@
         "ctaText": "Napisz 3 artykuły za darmo"
       },
       {
+        "badge": "Najczęściej wybierany",
         "description": "Dla freelancerów zarabiających na treściach",
         "features": [
           "20 artykułów miesięcznie",
@@ -282,7 +283,6 @@
         "ctaText": "Zacznij od 20 artykułów/mies."
       },
       {
-        "badge": "Najpopularniejszy",
         "description": "Dla agencji i zespołów contentowych",
         "features": [
           "100 artykułów miesięcznie",

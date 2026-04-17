@@ -47,16 +47,16 @@ const planMeta: {
     monthlyPrice: 49,
     annualPrice: 39,
     ctaHref: 'https://app.draft2live.ai/signup?plan=connect',
-    ctaVariant: 'secondary',
+    featured: true,
+    ctaVariant: 'primary',
+    hasBadge: true,
   },
   {
     name: 'Team',
     monthlyPrice: 149,
     annualPrice: 119,
     ctaHref: 'https://app.draft2live.ai/signup?plan=team',
-    featured: true,
-    ctaVariant: 'primary',
-    hasBadge: true,
+    ctaVariant: 'secondary',
   },
   {
     name: 'Pro',
@@ -200,9 +200,13 @@ export default function Pricing() {
                     ))}
                   </ul>
 
-                  {/* CTA */}
+                  {/* CTA — product is live, route directly to signup.
+                      EarlyAccessModal is reserved for non-ready flows; Pricing
+                      goes to the actual app. */}
                   <Button
-                    onClick={() => openEarlyAccess(plan.name)}
+                    href={plan.ctaHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     variant={plan.ctaVariant}
                     className="w-full justify-center"
                   >
