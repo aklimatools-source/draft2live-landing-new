@@ -76,14 +76,35 @@ export default function EarlyAccessModal() {
 
     setIsSubmitting(true);
 
+    // Netlify Forms submission (static site — no API routes).
+    // Form schema registered via public/__forms.html at build time.
+    // Spec: https://docs.netlify.com/forms/setup/#submit-javascript-rendered-forms-with-ajax
+    const encode = (data: Record<string, string>) =>
+      Object.keys(data)
+        .map((k) => encodeURIComponent(k) + '=' + encodeURIComponent(data[k]))
+        .join('&');
+
+    const locale =
+      typeof window !== 'undefined'
+        ? window.location.pathname.split('/')[1] || 'uk'
+        : 'uk';
+
     try {
-      await fetch('/api/early-access', {
+      await fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, plan: selectedPlan || undefined, landing: 'Draft2Live v3 UA' }),
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({
+          'form-name': 'early-access',
+          email,
+          plan: selectedPlan || '',
+          landing: 'Draft2Live',
+          locale,
+          gdprConsent: String(gdprConsent),
+          'bot-field': '',
+        }),
       });
     } catch {
-      // Webhook may fail silently — still show success to user
+      // Fail silently — still show success so user isn't blocked on network issues.
     }
 
     setIsSubmitting(false);
