@@ -11,6 +11,12 @@ import { routing } from '@/i18n/routing';
  * so Google could not discover locale variants and might serve the wrong
  * language to users. Fixed as part of P0 SEO remediation.
  */
+
+// Required for Next.js 16 with `output: 'export'` — without this, the build
+// fails with "export const dynamic = 'force-static' not configured" error.
+// The sitemap is fully static (no per-request data), so force-static is correct.
+export const dynamic = 'force-static';
+
 const baseUrl = 'https://draft2live.ai';
 
 // Public routes within each [locale] space. Add new public routes here when

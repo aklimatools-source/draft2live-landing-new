@@ -1,5 +1,8 @@
 import type { MetadataRoute } from 'next';
 
+// Required for Next.js 16 with `output: 'export'`.
+export const dynamic = 'force-static';
+
 /**
  * Dynamic robots.txt for Draft2Live.
  *
