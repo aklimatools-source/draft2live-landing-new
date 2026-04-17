@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "title": "Draft2Live — Od słowa kluczowego do artykułu na stronie w 20 minut",
+    "title": "Draft2Live: od słowa kluczowego do artykułu w 20 minut",
     "description": "Platforma AI do treści SEO: analiza SERP wg kraju, Brand Voice, audyt SEO i publikacja w WordPress lub Drupal jednym kliknięciem.",
-    "ogTitle": "Draft2Live — AI do treści SEO, które publikują się same",
+    "ogTitle": "Draft2Live: AI do treści SEO, które publikują się same",
     "ogDescription": "Podaj słowo kluczowe. Otrzymaj gotowy artykuł na stronie w 20 minut. Analiza SERP, Brand Voice, publikacja w CMS.",
-    "twitterTitle": "Draft2Live — AI do treści SEO",
+    "twitterTitle": "Draft2Live: AI do treści SEO",
     "twitterDescription": "Od słowa kluczowego do artykułu na stronie w 20 minut. Analiza SERP, Brand Voice, publikacja jednym kliknięciem."
   },
   "jsonLd": {
@@ -27,7 +27,7 @@
     "titleLine1": "Od słowa kluczowego",
     "titleLine2Prefix": "do",
     "titleLine3": "na stronie w 20 minut",
-    "typingWords": ["artykuł SEO", "wpis na blog", "recenzja produktu", "poradnik", "artykuł ekspercki"],
+    "typingWords": ["artykułu SEO", "wpisu na bloga", "recenzji produktu", "poradnika", "artykułu eksperckiego"],
     "subtitle": "Podaj frazę. AI przeanalizuje TOP 10 w wybranym kraju i napisze artykuł w stylu Twojej marki. Opublikuj w WordPress lub Drupal jednym kliknięciem.",
     "searchPlaceholder": "Wpisz słowo kluczowe dla artykułu...",
     "searchAriaLabel": "Słowo kluczowe dla artykułu",
@@ -36,7 +36,7 @@
     "chipExamples": [
       "jak wybrać CRM",
       "SEO dla sklepu",
-      "przegląd laptopów 2025",
+      "przegląd laptopów 2026",
       "marketing SaaS"
     ],
     "microcopy": "Bez karty kredytowej • 3 artykuły za darmo • Konfiguracja w 2 minuty",
@@ -55,12 +55,12 @@
   "howItWorks": {
     "header": {
       "badge": "JAK TO DZIAŁA",
-      "title": "Od słowa kluczowego do artykułu na stronie w 4 krokach."
+      "title": "Od słowa kluczowego do artykułu w 4 krokach"
     },
     "items": [
       {
         "title": "Podaj słowo kluczowe i kraj",
-        "desc": "Wybierz temat i rynek docelowy. AI pobiera rzeczywiste wyniki Google z Twojego regionu."
+        "desc": "Wybierz temat i rynek docelowy. AI pobierze prawdziwe wyniki Google z Twojego regionu."
       },
       {
         "title": "Platforma analizuje TOP 10",
@@ -71,7 +71,7 @@
         "desc": "Wykorzystuje dane SERP, Twój Brand Voice i dokumenty z Knowledge Base, aby napisać artykuł."
       },
       {
-        "title": "Jedno kliknięcie — artykuł na stronie",
+        "title": "Jedno kliknięcie, artykuł na stronie",
         "desc": "Publikujesz w WordPress lub Drupal. Meta tagi, obrazy, alt-teksty i linkowanie wewnętrzne dodawane automatycznie."
       }
     ]
@@ -79,13 +79,13 @@
   "features": {
     "header": {
       "badge": "FUNKCJE",
-      "title": "Jeden serwis zamiast pięciu. Każdy na poziomie osobnego produktu.",
+      "title": "Jedna platforma zamiast pięciu narzędzi. Każde na poziomie osobnego produktu",
       "subtitle": "Analiza SERP, AI copywriting, audyt SEO, tłumaczenia i publikacja w jednym oknie."
     },
     "items": [
       {
         "title": "Analiza SERP wg kraju",
-        "desc": "Analizuje TOP 10 Google w Twoim kraju. Nie ogólne dane, ale realni konkurenci na Twoim rynku.",
+        "desc": "Analizuje TOP 10 Google w Twoim kraju. Nie ogólne dane, lecz prawdziwi konkurenci na Twoim rynku.",
         "details": [
           "45 języków z geo-targetingiem",
           "Struktura i słowa kluczowe każdego konkurenta",
@@ -95,7 +95,7 @@
       },
       {
         "title": "Brand Voice",
-        "desc": "Prześlij 10+ tekstów, a AI przejmie Twój styl, ton i terminologię. Każdy artykuł brzmi jak Twój.",
+        "desc": "Prześlij 10+ swoich tekstów, a AI nauczy się Twojego stylu, tonu i terminologii. Każdy artykuł brzmi jak Twój.",
         "details": [
           "Analizuje ton, słownictwo, strukturę",
           "Osobny profil dla każdego projektu",
@@ -105,7 +105,7 @@
       },
       {
         "title": "Audyt SEO przed publikacją",
-        "desc": "Automatyczna kontrola wg 8 metryk. Artykuł nie zostanie opublikowany, dopóki nie uzyska 85+ punktów.",
+        "desc": "Automatyczna kontrola wg 8 metryk. Artykuł nie zostanie opublikowany, dopóki nie uzyska co najmniej 85 punktów.",
         "details": [
           "Gęstość słów kluczowych",
           "Czytelność i struktura nagłówków",
@@ -355,8 +355,8 @@
     "titlePart2": "A Ty?",
     "subtitle": "3 artykuły za darmo. Bez karty kredytowej. Wyniki w 20 minut.",
     "ctaPrimary": "Zacznij za darmo",
-    "ctaSecondary": "Zamów demo",
-    "trustLine": "WordPress + Drupal • 45 języków z geo-targetingiem • 30-dniowa gwarancja zwrotu",
+    "ctaSecondary": "Zobacz demo",
+    "trustLine": "WordPress + Drupal · 45 języków z geo-targetingiem · 30-dniowa gwarancja zwrotu",
     "imageAlt": "Draft2Live — AI-to-CMS publishing"
   },
   "footer": {
