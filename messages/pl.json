@@ -312,6 +312,7 @@
       "toggleAriaLabel": "Przełącz plan taryfowy"
     },
     "perMonth": "/mies.",
+    "customPriceLabel": "Indywidualnie",
     "plans": [
       {
         "description": "Wypróbuj bez zobowiązań, karta nie jest wymagana",
@@ -350,16 +351,16 @@
         "ctaText": "Skaluj treści"
       },
       {
-        "description": "Dla tych, którzy skalują treści jako biznes",
+        "description": "Dla dużych zespołów i agencji",
         "features": [
-          "300 artykułów miesięcznie",
-          "15 stron",
-          "API do automatyzacji",
-          "White-label: Twoja marka, Twój interfejs",
-          "Nieograniczona Knowledge Base",
-          "Dedykowany opiekun konta"
+          "Wszystko z Team",
+          "500+ artykułów/mies., custom credits",
+          "White-label + multi-brand, API bez limitów",
+          "SSO (SAML/OIDC), DPA, SLA 99,9%",
+          "Dedykowany menedżer sukcesu",
+          "Drupal-native integracja, opcja on-prem"
         ],
-        "ctaText": "Uzyskaj API + White-label"
+        "ctaText": "Skontaktuj się z nami"
       }
     ]
   },
@@ -395,8 +396,8 @@
       },
       {
         "q": "Czy nadaje się dla agencji z wieloma klientami?",
-        "a": "Tak, właśnie do tego służą plany Team i Pro. Podłączasz kilka stron, konfigurujesz osobny Brand Voice dla każdego klienta, a z white-label klienci nawet nie wiedzą, że korzystasz z Draft2Live.",
-        "aPlain": "Tak, właśnie do tego służą plany Team i Pro. Podłączasz kilka stron, konfigurujesz osobny Brand Voice dla każdego klienta, a z white-label klienci nawet nie wiedzą, że korzystasz z Draft2Live."
+        "a": "Tak, właśnie do tego służą plany Team i Enterprise. Podłączasz kilka stron, konfigurujesz osobny Brand Voice dla każdego klienta, a z white-label klienci nawet nie wiedzą, że korzystasz z Draft2Live.",
+        "aPlain": "Tak, właśnie do tego służą plany Team i Enterprise. Podłączasz kilka stron, konfigurujesz osobny Brand Voice dla każdego klienta, a z white-label klienci nawet nie wiedzą, że korzystasz z Draft2Live."
       },
       {
         "q": "A jeśli mi nie będzie odpowiadać?",

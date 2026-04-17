@@ -24,6 +24,7 @@ interface Plan {
   ctaHref: string;
   featured?: boolean;
   ctaVariant: 'primary' | 'secondary';
+  isContactSales?: boolean;
 }
 
 const planMeta: {
@@ -34,6 +35,7 @@ const planMeta: {
   featured?: boolean;
   ctaVariant: 'primary' | 'secondary';
   hasBadge?: boolean;
+  isContactSales?: boolean;
 }[] = [
   {
     name: 'Free',
@@ -59,11 +61,12 @@ const planMeta: {
     ctaVariant: 'secondary',
   },
   {
-    name: 'Pro',
-    monthlyPrice: 399,
-    annualPrice: 319,
-    ctaHref: 'https://app.draft2live.ai/signup?plan=pro',
+    name: 'Enterprise',
+    monthlyPrice: 0, // not rendered — shown as "Custom" via customPriceLabel
+    annualPrice: 0,
+    ctaHref: 'mailto:sales@draft2live.ai?subject=Enterprise%20plan%20inquiry',
     ctaVariant: 'secondary',
+    isContactSales: true,
   },
 ];
 
@@ -89,6 +92,7 @@ export default function Pricing() {
     ctaHref: meta.ctaHref,
     ctaVariant: meta.ctaVariant,
     featured: meta.featured,
+    isContactSales: meta.isContactSales,
     badge: meta.hasBadge ? t(`plans.${i}.badge`) : undefined,
     description: t(`plans.${i}.description`),
     features: (t.raw(`plans.${i}.features`) as string[]).map((text) => ({ text })),
@@ -170,24 +174,35 @@ export default function Pricing() {
                     <p className="text-text-muted text-sm mt-1" style={{ textWrap: 'pretty' }}>{plan.description}</p>
                   </div>
 
-                  {/* Price */}
+                  {/* Price — Enterprise shows "Custom" instead of € amount */}
                   <div className="mb-6">
-                    <div className="flex items-baseline gap-1">
-                      <AnimatePresence mode="wait">
-                        <motion.span
-                          key={isAnnual ? 'annual' : 'monthly'}
-                          initial={{ opacity: 0, y: -10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: 10 }}
-                          transition={{ duration: 0.2 }}
+                    {plan.isContactSales ? (
+                      <div className="flex items-baseline gap-1">
+                        <span
                           className="text-4xl font-heading font-black text-white"
                           style={{ letterSpacing: '-0.03em' }}
                         >
-                          €{isAnnual ? plan.annualPrice : plan.monthlyPrice}
-                        </motion.span>
-                      </AnimatePresence>
-                      <span className="text-text-muted text-sm">{t('perMonth')}</span>
-                    </div>
+                          {t('customPriceLabel')}
+                        </span>
+                      </div>
+                    ) : (
+                      <div className="flex items-baseline gap-1">
+                        <AnimatePresence mode="wait">
+                          <motion.span
+                            key={isAnnual ? 'annual' : 'monthly'}
+                            initial={{ opacity: 0, y: -10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: 10 }}
+                            transition={{ duration: 0.2 }}
+                            className="text-4xl font-heading font-black text-white"
+                            style={{ letterSpacing: '-0.03em' }}
+                          >
+                            €{isAnnual ? plan.annualPrice : plan.monthlyPrice}
+                          </motion.span>
+                        </AnimatePresence>
+                        <span className="text-text-muted text-sm">{t('perMonth')}</span>
+                      </div>
+                    )}
                   </div>
 
                   {/* Features */}

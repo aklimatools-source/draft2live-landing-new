@@ -312,6 +312,7 @@
       "toggleAriaLabel": "Toggle billing plan"
     },
     "perMonth": "/mo",
+    "customPriceLabel": "Custom",
     "plans": [
       {
         "description": "Try without commitment, no card required",
@@ -350,16 +351,16 @@
         "ctaText": "Scale your content"
       },
       {
-        "description": "For those who scale content as a business",
+        "description": "For large teams and agencies",
         "features": [
-          "300 articles per month",
-          "15 sites",
-          "API for automation",
-          "White-label: your brand, your interface",
-          "Unlimited Knowledge Base",
-          "Dedicated account manager"
+          "Everything in Team",
+          "500+ articles/month, custom credits",
+          "White-label + multi-brand, unlimited API",
+          "SSO (SAML/OIDC), DPA, 99.9% SLA",
+          "Dedicated success manager",
+          "Drupal-native integration, on-prem option"
         ],
-        "ctaText": "Get API + White-label"
+        "ctaText": "Contact sales"
       }
     ]
   },
@@ -395,8 +396,8 @@
       },
       {
         "q": "Is it suitable for an agency with multiple clients?",
-        "a": "Yes, that's exactly what the Team and Pro plans are for. You connect multiple sites, set up separate Brand Voice for each client, and with white-label clients don't even know you're using Draft2Live.",
-        "aPlain": "Yes, that's exactly what the Team and Pro plans are for. You connect multiple sites, set up separate Brand Voice for each client, and with white-label clients don't even know you're using Draft2Live."
+        "a": "Yes, that's exactly what the Team and Enterprise plans are for. You connect multiple sites, set up separate Brand Voice for each client, and with white-label clients don't even know you're using Draft2Live.",
+        "aPlain": "Yes, that's exactly what the Team and Enterprise plans are for. You connect multiple sites, set up separate Brand Voice for each client, and with white-label clients don't even know you're using Draft2Live."
       },
       {
         "q": "What if it doesn't work for me?",
