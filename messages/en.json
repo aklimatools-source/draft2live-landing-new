@@ -143,7 +143,61 @@
         ],
         "visual": { "label": "Your brand", "stat": "White-label" }
       }
-    ]
+    ],
+    "visuals": {
+      "serp": {
+        "query": "seo optimization for small business",
+        "countryBadge": "US",
+        "results": [
+          { "title": "Complete SEO Optimization Guide for 2026", "domain": "competitor-a.com" },
+          { "title": "How to Rank on Google: 15 Proven Steps", "domain": "seo-blog.com" },
+          { "title": "SEO for Business: Strategy from A to Z", "domain": "marketing-pro.com" },
+          { "title": "Website Promotion in 2026", "domain": "webmaster.io" }
+        ],
+        "done": "TOP 10 analysis complete"
+      },
+      "brandVoice": {
+        "title": "Your Style Analysis",
+        "metrics": [
+          { "label": "Tone", "value": "Professional" },
+          { "label": "Complexity", "value": "Medium" },
+          { "label": "Emotion", "value": "Moderate" },
+          { "label": "Technical", "value": "High" }
+        ],
+        "yourText": "Your text",
+        "aiResult": "AI output"
+      },
+      "seoAudit": {
+        "metrics": [
+          "Keywords", "Headings H1-H6", "Meta description", "Readability",
+          "Alt text", "Internal linking", "Content length", "URL structure"
+        ]
+      },
+      "cmsPublish": {
+        "url": "your-site.com/blog/seo-guide-2026",
+        "siteName": "TechBlog.io",
+        "nav": { "home": "Home", "blog": "Blog", "contacts": "Contact" },
+        "breadcrumb": { "home": "Home", "blog": "Blog", "category": "SEO Guide" },
+        "article": {
+          "title": "Complete SEO Guide for Small Business in 2026",
+          "authorInitial": "J",
+          "author": "John D.",
+          "date": "Apr 8, 2026",
+          "readTime": "12 min read",
+          "body": "SEO optimization is a set of strategies aimed at improving your site's position in Google search results. In this guide we cover key tactics...",
+          "h2": "1. Technical site audit",
+          "bodyH2": "Start with checking load speed, mobile adaptation and page indexing. Use Google Search Console..."
+        },
+        "status": "Published"
+      },
+      "knowledgeBase": {
+        "title": "Uploaded documents",
+        "indexed": "3 documents indexed"
+      },
+      "whiteLabel": {
+        "title": "Your brand"
+      }
+    }
   },
   "metrics": {
     "items": [
@@ -368,15 +422,15 @@
     },
     "product": {
       "title": "Product",
-      "links": ["Features", "Pricing", "API", "Integrations", "Updates"]
+      "links": ["Features", "Pricing"]
     },
     "company": {
       "title": "Company",
-      "links": ["About", "Blog", "Contact", "Careers"]
+      "links": ["Contact"]
     },
     "languages": {
       "title": "Languages",
-      "links": ["Українська", "English", "Polski", "Русский"]
+      "links": ["Українська", "English", "Русский", "Polski"]
     },
     "legal": {
       "links": ["Terms", "Privacy", "Cookies"]

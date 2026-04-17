@@ -76,12 +76,12 @@ const AUTO_INTERVAL = 5000;
 
 /* ── SERP Analysis Visual ── */
 function SerpVisual() {
-  const results = [
-    { pos: 1, title: 'SEO-оптимізація сайту: повний гайд 2025', domain: 'competitor-a.com', flag: 'ua' },
-    { pos: 2, title: 'Як просувати сайт в Google: 15 кроків', domain: 'seo-blog.com.ua', flag: 'ua' },
-    { pos: 3, title: 'SEO для бізнесу: стратегія від А до Я', domain: 'marketing-pro.ua', flag: 'ua' },
-    { pos: 4, title: 'Просування сайтів у 2025 році', domain: 'webmaster.ua', flag: 'ua' },
-  ];
+  const t = useTranslations('features.visuals.serp');
+  const results = (t.raw('results') as { title: string; domain: string }[]).map((r, i) => ({
+    pos: i + 1,
+    title: r.title,
+    domain: r.domain,
+  }));
   return (
     <div className="relative h-full w-full rounded-2xl overflow-hidden bg-surface/50 border border-border/40 p-5 md:p-6">
       <div className="absolute w-48 h-48 rounded-full bg-teal-500/10 blur-3xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
@@ -89,8 +89,8 @@ function SerpVisual() {
         {/* Search bar mockup */}
         <div className="flex items-center gap-2 bg-white/[0.04] border border-white/10 rounded-lg px-3 py-2 mb-4">
           <svg className="w-4 h-4 text-text-muted shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-          <span className="text-teal-400 text-xs font-mono">seo оптимізація сайту</span>
-          <span className="ml-auto text-[10px] text-text-muted bg-white/5 px-1.5 py-0.5 rounded">UA</span>
+          <span className="text-teal-400 text-xs font-mono">{t('query')}</span>
+          <span className="ml-auto text-[10px] text-text-muted bg-white/5 px-1.5 py-0.5 rounded">{t('countryBadge')}</span>
         </div>
         {results.map((r, i) => (
           <motion.div
@@ -108,7 +108,7 @@ function SerpVisual() {
           </motion.div>
         ))}
         <div className="text-center pt-1">
-          <span className="text-teal-400/60 text-[10px]">Аналіз ТОП-10 завершено</span>
+          <span className="text-teal-400/60 text-[10px]">{t('done')}</span>
         </div>
       </div>
     </div>
@@ -117,18 +117,18 @@ function SerpVisual() {
 
 /* ── Brand Voice Visual ── */
 function BrandVoiceVisual() {
+  const t = useTranslations('features.visuals.brandVoice');
+  const rawMetrics = t.raw('metrics') as { label: string; value: string }[];
+  // Percentages are static design values, not translated.
+  const pctByIndex = [85, 62, 48, 78];
+  const metrics = rawMetrics.map((m, i) => ({ ...m, pct: pctByIndex[i] ?? 50 }));
   return (
     <div className="relative h-full w-full rounded-2xl overflow-hidden bg-surface/50 border border-border/40 p-5 md:p-6">
       <div className="absolute w-48 h-48 rounded-full bg-teal-500/10 blur-3xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
       <div className="relative space-y-3">
-        <div className="text-[10px] text-text-muted uppercase tracking-wider mb-3">Аналіз вашого стилю</div>
+        <div className="text-[10px] text-text-muted uppercase tracking-wider mb-3">{t('title')}</div>
         {/* Voice metrics */}
-        {[
-          { label: 'Тон', value: 'Професійний', pct: 85 },
-          { label: 'Складність', value: 'Середня', pct: 62 },
-          { label: 'Емоційність', value: 'Помірна', pct: 48 },
-          { label: 'Технічність', value: 'Висока', pct: 78 },
-        ].map((m, i) => (
+        {metrics.map((m, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0 }}
@@ -152,7 +152,7 @@ function BrandVoiceVisual() {
         {/* Sample text comparison */}
         <div className="mt-3 grid grid-cols-2 gap-2">
           <div className="bg-white/[0.03] border border-white/5 rounded-lg p-2.5">
-            <div className="text-[10px] text-text-muted mb-1.5">Ваш текст</div>
+            <div className="text-[10px] text-text-muted mb-1.5">{t('yourText')}</div>
             <div className="space-y-1">
               <div className="h-1 bg-teal-400/30 rounded-full w-full" />
               <div className="h-1 bg-teal-400/20 rounded-full w-4/5" />
@@ -160,7 +160,7 @@ function BrandVoiceVisual() {
             </div>
           </div>
           <div className="bg-white/[0.03] border border-teal-500/10 rounded-lg p-2.5">
-            <div className="text-[10px] text-teal-400 mb-1.5">AI результат</div>
+            <div className="text-[10px] text-teal-400 mb-1.5">{t('aiResult')}</div>
             <div className="space-y-1">
               <div className="h-1 bg-teal-400/30 rounded-full w-full" />
               <div className="h-1 bg-teal-400/20 rounded-full w-4/5" />
@@ -175,16 +175,11 @@ function BrandVoiceVisual() {
 
 /* ── SEO Audit Visual ── */
 function SeoAuditVisual() {
-  const metrics = [
-    { name: 'Ключові слова', score: 92, ok: true },
-    { name: 'Заголовки H1-H6', score: 88, ok: true },
-    { name: 'Мета-опис', score: 95, ok: true },
-    { name: 'Читабельність', score: 84, ok: false },
-    { name: 'Alt-тексти', score: 90, ok: true },
-    { name: 'Перелінковка', score: 78, ok: false },
-    { name: 'Довжина тексту', score: 91, ok: true },
-    { name: 'URL-структура', score: 96, ok: true },
-  ];
+  const t = useTranslations('features.visuals.seoAudit');
+  const names = t.raw('metrics') as string[];
+  // Scores + ok flags are static design values.
+  const scoresAndOk: [number, boolean][] = [[92, true], [88, true], [95, true], [84, false], [90, true], [78, false], [91, true], [96, true]];
+  const metrics = names.map((name, i) => ({ name, score: scoresAndOk[i][0], ok: scoresAndOk[i][1] }));
   return (
     <div className="relative h-full w-full rounded-2xl overflow-hidden bg-surface/50 border border-border/40 p-5 md:p-6">
       <div className="absolute w-48 h-48 rounded-full bg-teal-500/10 blur-3xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
@@ -232,6 +227,7 @@ function SeoAuditVisual() {
 
 /* ── CMS Publish Visual ── */
 function CmsPublishVisual() {
+  const t = useTranslations('features.visuals.cmsPublish');
   return (
     <div className="relative h-full w-full rounded-2xl overflow-hidden bg-surface/50 border border-border/40 p-4 md:p-5">
       <div className="absolute w-48 h-48 rounded-full bg-teal-500/10 blur-3xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
@@ -246,7 +242,7 @@ function CmsPublishVisual() {
               <div className="w-2 h-2 rounded-full bg-white/10" />
             </div>
             <div className="flex-1 mx-2 bg-white/5 rounded px-2 py-0.5 text-[9px] text-text-muted text-center">
-              your-site.com/blog/seo-optimizacia-sajtu
+              {t('url')}
             </div>
           </div>
           {/* Article page - light theme like a real published blog */}
@@ -256,35 +252,35 @@ function CmsPublishVisual() {
               <div className="w-4 h-4 rounded bg-[#002365] flex items-center justify-center">
                 <span className="text-[5px] text-white font-bold">W</span>
               </div>
-              <span className="text-[7px] text-gray-500 font-normal">TechBlog.ua</span>
+              <span className="text-[7px] text-gray-500 font-normal">{t('siteName')}</span>
               <div className="ml-auto flex gap-2">
-                <span className="text-[6px] text-gray-400">Головна</span>
-                <span className="text-[6px] text-gray-400">Блог</span>
-                <span className="text-[6px] text-gray-400">Контакти</span>
+                <span className="text-[6px] text-gray-400">{t('nav.home')}</span>
+                <span className="text-[6px] text-gray-400">{t('nav.blog')}</span>
+                <span className="text-[6px] text-gray-400">{t('nav.contacts')}</span>
               </div>
             </div>
             {/* Breadcrumb */}
             <div className="flex items-center gap-0.5 mb-2">
-              <span className="text-[6px] text-gray-400">Головна</span>
+              <span className="text-[6px] text-gray-400">{t('breadcrumb.home')}</span>
               <span className="text-[6px] text-gray-300">›</span>
-              <span className="text-[6px] text-gray-400">Блог</span>
+              <span className="text-[6px] text-gray-400">{t('breadcrumb.blog')}</span>
               <span className="text-[6px] text-gray-300">›</span>
-              <span className="text-[6px] text-teal-500">SEO-оптимізація</span>
+              <span className="text-[6px] text-teal-500">{t('breadcrumb.category')}</span>
             </div>
             {/* Article title */}
             <p className="text-[9px] sm:text-[10px] font-bold text-gray-900 leading-tight mb-1">
-              SEO-оптимізація сайту у 2025: повний гайд для бізнесу
+              {t('article.title')}
             </p>
             {/* Meta */}
             <div className="flex items-center gap-1.5 mb-2">
               <div className="w-3.5 h-3.5 rounded-full bg-teal-100 flex items-center justify-center">
-                <span className="text-[5px] text-teal-600 font-bold">O</span>
+                <span className="text-[5px] text-teal-600 font-bold">{t('article.authorInitial')}</span>
               </div>
-              <span className="text-[6px] text-gray-400">Олексій К.</span>
+              <span className="text-[6px] text-gray-400">{t('article.author')}</span>
               <span className="text-[5px] text-gray-300">•</span>
-              <span className="text-[6px] text-gray-400">8 квіт 2025</span>
+              <span className="text-[6px] text-gray-400">{t('article.date')}</span>
               <span className="text-[5px] text-gray-300">•</span>
-              <span className="text-[6px] text-gray-400">12 хв читання</span>
+              <span className="text-[6px] text-gray-400">{t('article.readTime')}</span>
             </div>
             {/* Hero image */}
             <div className="h-12 sm:h-14 bg-gradient-to-br from-teal-50 via-teal-50 to-teal-50 rounded mb-2 flex items-center justify-center overflow-hidden relative">
@@ -297,14 +293,14 @@ function CmsPublishVisual() {
             </div>
             {/* Article body */}
             <p className="text-[6px] sm:text-[7px] text-gray-600 leading-relaxed mb-1.5">
-              SEO-оптимізація — це комплекс заходів, спрямованих на покращення позицій сайту в пошуковій видачі Google. У цьому гайді розглянемо ключові стратегії...
+              {t('article.body')}
             </p>
             {/* H2 */}
             <p className="text-[7px] sm:text-[8px] font-bold text-gray-800 mb-1">
-              1. Технічний аудит сайту
+              {t('article.h2')}
             </p>
             <p className="text-[6px] sm:text-[7px] text-gray-600 leading-relaxed">
-              Перший крок — перевірка швидкості завантаження, мобільної адаптації та індексації сторінок. Використовуйте Google Search Console...
+              {t('article.bodyH2')}
             </p>
           </div>
         </div>
@@ -329,7 +325,7 @@ function CmsPublishVisual() {
           className="flex items-center justify-center gap-1.5 mt-3"
         >
           <div className="w-2 h-2 rounded-full bg-teal-400 animate-pulse" />
-          <span className="text-teal-400 text-xs">Опубліковано</span>
+          <span className="text-teal-400 text-xs">{t('status')}</span>
         </motion.div>
       </div>
     </div>
@@ -338,16 +334,18 @@ function CmsPublishVisual() {
 
 /* ── Knowledge Base Visual ── */
 function KnowledgeBaseVisual() {
+  const t = useTranslations('features.visuals.knowledgeBase');
+  // Filenames stay universal (extensions are international)
   const docs = [
     { name: 'product-specs.pdf', size: '2.4 MB', type: 'PDF' },
-    { name: 'pricing-2025.docx', size: '840 KB', type: 'DOCX' },
+    { name: 'pricing-2026.docx', size: '840 KB', type: 'DOCX' },
     { name: 'faq-answers.txt', size: '120 KB', type: 'TXT' },
   ];
   return (
     <div className="relative h-full w-full rounded-2xl overflow-hidden bg-surface/50 border border-border/40 p-5 md:p-6">
       <div className="absolute w-48 h-48 rounded-full bg-teal-500/10 blur-3xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
       <div className="relative space-y-3">
-        <div className="text-[10px] text-text-muted uppercase tracking-wider">Завантажені документи</div>
+        <div className="text-[10px] text-text-muted uppercase tracking-wider">{t('title')}</div>
         {docs.map((d, i) => (
           <motion.div
             key={i}
@@ -371,7 +369,7 @@ function KnowledgeBaseVisual() {
         {/* Connection lines */}
         <div className="flex items-center gap-2 pt-1">
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-teal-500/20 to-transparent" />
-          <span className="text-[10px] text-text-muted">3 документи проіндексовано</span>
+          <span className="text-[10px] text-text-muted">{t('indexed')}</span>
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-teal-500/20 to-transparent" />
         </div>
       </div>
@@ -381,11 +379,12 @@ function KnowledgeBaseVisual() {
 
 /* ── White-label Visual ── */
 function WhiteLabelVisual() {
+  const t = useTranslations('features.visuals.whiteLabel');
   return (
     <div className="relative h-full w-full rounded-2xl overflow-hidden bg-surface/50 border border-border/40 p-5 md:p-6">
       <div className="absolute w-48 h-48 rounded-full bg-teal-500/10 blur-3xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
       <div className="relative space-y-3">
-        <div className="text-[10px] text-text-muted uppercase tracking-wider">Ваш бренд</div>
+        <div className="text-[10px] text-text-muted uppercase tracking-wider">{t('title')}</div>
         {/* Brand cards */}
         {[
           { name: 'ContentBox Agency', color: 'bg-teal-500', accent: 'border-teal-500/30' },

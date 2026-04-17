@@ -143,7 +143,61 @@
         ],
         "visual": { "label": "Twoja marka", "stat": "White-label" }
       }
-    ]
+    ],
+    "visuals": {
+      "serp": {
+        "query": "seo dla małych firm",
+        "countryBadge": "PL",
+        "results": [
+          { "title": "Kompletny przewodnik SEO 2026", "domain": "konkurent-a.pl" },
+          { "title": "Jak pozycjonować stronę w Google: 15 kroków", "domain": "seo-blog.pl" },
+          { "title": "SEO dla firm: strategia od A do Z", "domain": "marketing-pro.pl" },
+          { "title": "Pozycjonowanie stron w 2026 roku", "domain": "webmaster.pl" }
+        ],
+        "done": "Analiza TOP 10 zakończona"
+      },
+      "brandVoice": {
+        "title": "Analiza Twojego stylu",
+        "metrics": [
+          { "label": "Ton", "value": "Profesjonalny" },
+          { "label": "Złożoność", "value": "Średnia" },
+          { "label": "Emocje", "value": "Umiarkowane" },
+          { "label": "Techniczność", "value": "Wysoka" }
+        ],
+        "yourText": "Twój tekst",
+        "aiResult": "Wynik AI"
+      },
+      "seoAudit": {
+        "metrics": [
+          "Słowa kluczowe", "Nagłówki H1-H6", "Meta opis", "Czytelność",
+          "Alt-teksty", "Linkowanie wewnętrzne", "Długość treści", "Struktura URL"
+        ]
+      },
+      "cmsPublish": {
+        "url": "twoja-strona.pl/blog/seo-2026",
+        "siteName": "TechBlog.pl",
+        "nav": { "home": "Główna", "blog": "Blog", "contacts": "Kontakt" },
+        "breadcrumb": { "home": "Główna", "blog": "Blog", "category": "Przewodnik SEO" },
+        "article": {
+          "title": "Kompletny przewodnik SEO dla firm w 2026",
+          "authorInitial": "J",
+          "author": "Jan K.",
+          "date": "8 kwi 2026",
+          "readTime": "12 min czytania",
+          "body": "SEO to zestaw działań, które poprawiają pozycję strony w wynikach wyszukiwania Google. W tym przewodniku omówimy kluczowe strategie...",
+          "h2": "1. Audyt techniczny strony",
+          "bodyH2": "Pierwszy krok — sprawdzenie szybkości ładowania, adaptacji mobilnej i indeksowania stron. Wykorzystaj Google Search Console..."
+        },
+        "status": "Opublikowano"
+      },
+      "knowledgeBase": {
+        "title": "Przesłane dokumenty",
+        "indexed": "3 dokumenty zindeksowane"
+      },
+      "whiteLabel": {
+        "title": "Twoja marka"
+      }
+    }
   },
   "metrics": {
     "items": [
@@ -368,15 +422,15 @@
     },
     "product": {
       "title": "Produkt",
-      "links": ["Funkcje", "Cennik", "API", "Integracje", "Aktualizacje"]
+      "links": ["Funkcje", "Cennik"]
     },
     "company": {
       "title": "Firma",
-      "links": ["O nas", "Blog", "Kontakt", "Kariera"]
+      "links": ["Kontakt"]
     },
     "languages": {
       "title": "Języki",
-      "links": ["Українська", "English", "Polski", "Русский"]
+      "links": ["Українська", "English", "Русский", "Polski"]
     },
     "legal": {
       "links": ["Regulamin", "Prywatność", "Cookies"]
